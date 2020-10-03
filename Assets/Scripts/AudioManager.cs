@@ -54,7 +54,7 @@ namespace Assets.Scripts
 
         public void Mute(Music soundName)
         {
-            GetSound(soundName).Source.volume = 0;
+            GetSound(soundName).Source.volume = 0f;
         }
 
         public void UnMute(Music soundName)
