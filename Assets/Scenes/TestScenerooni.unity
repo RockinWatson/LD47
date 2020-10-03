@@ -396,35 +396,41 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Sounds:
-  - Name: FullBand
+  - Name: 0
     Clip: {fileID: 8300000, guid: 3b67a1604806ba74e9e5dbf1200ac2c6, type: 3}
     Volume: 1
     Pitch: 0
+    Loop: 1
     Source: {fileID: 0}
-  - Name: Bass
+  - Name: 1
     Clip: {fileID: 8300000, guid: 11cb5a37109dabd4687c2fbe418b1a04, type: 3}
     Volume: 1
     Pitch: 0
+    Loop: 1
     Source: {fileID: 0}
-  - Name: Chords
+  - Name: 2
     Clip: {fileID: 8300000, guid: b93223be541a5844cadcb0c37c53a33b, type: 3}
     Volume: 1
     Pitch: 0
+    Loop: 1
     Source: {fileID: 0}
-  - Name: Drums
+  - Name: 3
     Clip: {fileID: 8300000, guid: e4c6e8dc186839d42b3ec903e07969ec, type: 3}
     Volume: 1
     Pitch: 0
+    Loop: 1
     Source: {fileID: 0}
-  - Name: Lead
+  - Name: 4
     Clip: {fileID: 8300000, guid: 689a073cdaf77134c9209f8719fd6923, type: 3}
     Volume: 1
     Pitch: 0
+    Loop: 1
     Source: {fileID: 0}
-  - Name: Melody
+  - Name: 5
     Clip: {fileID: 8300000, guid: a6ea645abc25b9340802affacba7923c, type: 3}
     Volume: 1
     Pitch: 0
+    Loop: 1
     Source: {fileID: 0}
 --- !u!4 &765637319
 Transform:
@@ -683,3 +689,46 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1956161002
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1956161003}
+  - component: {fileID: 1956161004}
+  m_Layer: 0
+  m_Name: PlayerController
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1956161003
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1956161002}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1956161004
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1956161002}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b537e242d41c224da98373ead5f2487, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
