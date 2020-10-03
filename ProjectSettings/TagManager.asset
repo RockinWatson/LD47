@@ -41,3 +41,15 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: BACK
+    uniqueID: 2601185167
+    locked: 0
+  - name: TEMPbackground
+    uniqueID: 334052541
+    locked: 0
+  - name: TEMPband
+    uniqueID: 1862803341
+    locked: 0
+  - name: FRONT
+    uniqueID: 858085755
+    locked: 0
