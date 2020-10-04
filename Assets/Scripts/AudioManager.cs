@@ -33,10 +33,7 @@ namespace Assets.Scripts
         {
             foreach (Music music in Enum.GetValues(typeof(Music)))
             {
-                if (music == Music.FullBand)
-                {
-                    continue;
-                }
+                if (music == Music.FullBand){ continue; }
                 Play(music);
             }
         }
@@ -75,7 +72,7 @@ namespace Assets.Scripts
         public void PlayFullBandReverse()
         {
             var fullBand = GetSound(Music.FullBand);
-            fullBand.Source.pitch = -1;
+            fullBand.Source.pitch = -5;
             fullBand.Source.loop = true;
             fullBand.Source.Play();
             StartCoroutine(StopLoop(fullBand));

@@ -11,6 +11,10 @@ namespace Assets.Scripts
 
         private void ReadInputs()
         {
+            if (true)
+            {
+
+            }
             //Bass Controller
             if (Input.GetKeyDown(KeyCode.Alpha1))
             {
