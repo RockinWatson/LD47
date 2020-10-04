@@ -1,0 +1,848 @@
+fileFormatVersion: 2
+guid: 92c5c526d461c0c44a70546836c75699
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -7507727970000592223
+    second: CactusON_000
+  - first:
+      213: -6870486456916160369
+    second: CactusON_001
+  - first:
+      213: 3215293956863410500
+    second: CactusON_002
+  - first:
+      213: 313272408284106072
+    second: CactusON_003
+  - first:
+      213: 2533853894929729967
+    second: CactusON_004
+  - first:
+      213: 6619867618936383834
+    second: CactusON_005
+  - first:
+      213: -2138740356443003604
+    second: CactusON_006
+  - first:
+      213: 623740960678997752
+    second: CactusON_007
+  - first:
+      213: -2295228298892418197
+    second: CactusON_008
+  - first:
+      213: 5827370054443268109
+    second: CactusON_009
+  - first:
+      213: -8163522843216323869
+    second: CactusON_010
+  - first:
+      213: -8656966294336965044
+    second: CactusON_011
+  - first:
+      213: 4966179250703064786
+    second: CactusON_012
+  - first:
+      213: -2142122550614147145
+    second: CactusON_013
+  - first:
+      213: 4538227922314092076
+    second: CactusON_014
+  - first:
+      213: -7510073022483214693
+    second: CactusON_015
+  - first:
+      213: -233562157176497938
+    second: CactusON_016
+  - first:
+      213: 5027981201398834533
+    second: CactusON_017
+  - first:
+      213: -5173116750725322733
+    second: CactusON_018
+  - first:
+      213: -4000669514764998995
+    second: CactusON_019
+  - first:
+      213: -4836411911916487369
+    second: CactusON_020
+  - first:
+      213: 2414254909715754526
+    second: CactusON_021
+  - first:
+      213: 5223731423995156974
+    second: CactusON_022
+  - first:
+      213: 5340949271067119540
+    second: CactusON_023
+  - first:
+      213: 1695463413323271377
+    second: CactusON_024
+  - first:
+      213: -652605877811613990
+    second: CactusON_025
+  - first:
+      213: -3143740026851688115
+    second: CactusON_026
+  - first:
+      213: -3822637483466122353
+    second: CactusON_027
+  - first:
+      213: 5485414888951316893
+    second: CactusON_028
+  - first:
+      213: -5420033661958573590
+    second: CactusON_029
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: CactusON_000
+      rect:
+        serializedVersion: 2
+        x: 1519
+        y: 1634
+        width: 317
+        height: 413
+      alignment: 9
+      pivot: {x: 0.5, y: 0.50121063}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1a2a9dd50313fc790800000000000000
+      internalID: -7507727970000592223
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CactusON_001
+      rect:
+        serializedVersion: 2
+        x: 1838
+        y: 1635
+        width: 313
+        height: 412
+      alignment: 9
+      pivot: {x: 0.49361023, y: 0.50242716}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f80516508f027a0a0800000000000000
+      internalID: -6870486456916160369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CactusON_002
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 385
+        width: 311
+        height: 414
+      alignment: 9
+      pivot: {x: 0.4903537, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 441cd4381d40f9c20800000000000000
+      internalID: 3215293956863410500
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CactusON_003
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1633
+        width: 317
+        height: 414
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 85d84b57897f85400800000000000000
+      internalID: 313272408284106072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CactusON_004
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1217
+        width: 313
+        height: 414
+      alignment: 9
+      pivot: {x: 0.49361023, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fa9c60841be0a2320800000000000000
+      internalID: 2533853894929729967
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CactusON_005
+      rect:
+        serializedVersion: 2
+        x: 314
+        y: 385
+        width: 311
+        height: 414
+      alignment: 9
+      pivot: {x: 0.4903537, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a5960de968e7edb50800000000000000
+      internalID: 6619867618936383834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CactusON_006
+      rect:
+        serializedVersion: 2
+        x: 316
+        y: 1217
+        width: 304
+        height: 414
+      alignment: 9
+      pivot: {x: 0.4786184, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c252c633afaa152e0800000000000000
+      internalID: -2138740356443003604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CactusON_007
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 1633
+        width: 303
+        height: 414
+      alignment: 9
+      pivot: {x: 0.4768977, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8fee1295919f7a800800000000000000
+      internalID: 623740960678997752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CactusON_008
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 801
+        width: 299
+        height: 414
+      alignment: 9
+      pivot: {x: 0.46989965, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b63e716d506b520e0800000000000000
+      internalID: -2295228298892418197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CactusON_009
+      rect:
+        serializedVersion: 2
+        x: 627
+        y: 385
+        width: 298
+        height: 414
+      alignment: 9
+      pivot: {x: 0.4681208, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d08f6d5903afed050800000000000000
+      internalID: 5827370054443268109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CactusON_010
+      rect:
+        serializedVersion: 2
+        x: 928
+        y: 1633
+        width: 296
+        height: 414
+      alignment: 9
+      pivot: {x: 0.46452704, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3eadd4ee93755be80800000000000000
+      internalID: -8163522843216323869
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CactusON_011
+      rect:
+        serializedVersion: 2
+        x: 925
+        y: 801
+        width: 293
+        height: 414
+      alignment: 9
+      pivot: {x: 0.45904437, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c46f38995074cd780800000000000000
+      internalID: -8656966294336965044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CactusON_012
+      rect:
+        serializedVersion: 2
+        x: 1220
+        y: 801
+        width: 292
+        height: 414
+      alignment: 9
+      pivot: {x: 0.4571918, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2de521177b96be440800000000000000
+      internalID: 4966179250703064786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CactusON_013
+      rect:
+        serializedVersion: 2
+        x: 1222
+        y: 385
+        width: 290
+        height: 414
+      alignment: 9
+      pivot: {x: 0.45344827, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7bf3a41c3e6a542e0800000000000000
+      internalID: -2142122550614147145
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CactusON_014
+      rect:
+        serializedVersion: 2
+        x: 1514
+        y: 801
+        width: 290
+        height: 414
+      alignment: 9
+      pivot: {x: 0.45344827, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c2e5a4330460bfe30800000000000000
+      internalID: 4538227922314092076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CactusON_015
+      rect:
+        serializedVersion: 2
+        x: 1514
+        y: 385
+        width: 290
+        height: 414
+      alignment: 9
+      pivot: {x: 0.45344827, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b9ec4a9406cd6c790800000000000000
+      internalID: -7510073022483214693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CactusON_016
+      rect:
+        serializedVersion: 2
+        x: 1226
+        y: 1633
+        width: 291
+        height: 414
+      alignment: 9
+      pivot: {x: 0.45532647, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ee8558c947832ccf0800000000000000
+      internalID: -233562157176497938
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CactusON_017
+      rect:
+        serializedVersion: 2
+        x: 1225
+        y: 1217
+        width: 292
+        height: 414
+      alignment: 9
+      pivot: {x: 0.4571918, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 56528b6634af6c540800000000000000
+      internalID: 5027981201398834533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CactusON_018
+      rect:
+        serializedVersion: 2
+        x: 927
+        y: 385
+        width: 293
+        height: 414
+      alignment: 9
+      pivot: {x: 0.45904437, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 318e46b39b56538b0800000000000000
+      internalID: -5173116750725322733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CactusON_019
+      rect:
+        serializedVersion: 2
+        x: 925
+        y: 1217
+        width: 298
+        height: 414
+      alignment: 9
+      pivot: {x: 0.4681208, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da6a2b4d544ca78c0800000000000000
+      internalID: -4000669514764998995
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CactusON_020
+      rect:
+        serializedVersion: 2
+        x: 1834
+        y: 1219
+        width: 303
+        height: 413
+      alignment: 9
+      pivot: {x: 0.4768977, y: 0.50121063}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 73dffb29dfc91ecb0800000000000000
+      internalID: -4836411911916487369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CactusON_021
+      rect:
+        serializedVersion: 2
+        x: 622
+        y: 1217
+        width: 301
+        height: 414
+      alignment: 9
+      pivot: {x: 0.47342193, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e1ea9d29c08218120800000000000000
+      internalID: 2414254909715754526
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CactusON_022
+      rect:
+        serializedVersion: 2
+        x: 625
+        y: 1633
+        width: 301
+        height: 414
+      alignment: 9
+      pivot: {x: 0.47342193, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ee9d649bd0c6e7840800000000000000
+      internalID: 5223731423995156974
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CactusON_023
+      rect:
+        serializedVersion: 2
+        x: 315
+        y: 801
+        width: 307
+        height: 414
+      alignment: 9
+      pivot: {x: 0.48371336, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4bf4651801dde1a40800000000000000
+      internalID: 5340949271067119540
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CactusON_024
+      rect:
+        serializedVersion: 2
+        x: 2119
+        y: 805
+        width: 304
+        height: 412
+      alignment: 9
+      pivot: {x: 0.4786184, y: 0.50242716}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1dc0ec0ddfe778710800000000000000
+      internalID: 1695463413323271377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CactusON_025
+      rect:
+        serializedVersion: 2
+        x: 2116
+        y: 390
+        width: 307
+        height: 412
+      alignment: 9
+      pivot: {x: 0.48371336, y: 0.50242716}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: adee4ba696a71f6f0800000000000000
+      internalID: -652605877811613990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CactusON_026
+      rect:
+        serializedVersion: 2
+        x: 1806
+        y: 390
+        width: 308
+        height: 412
+      alignment: 9
+      pivot: {x: 0.48538962, y: 0.50242716}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d4104511a113f54d0800000000000000
+      internalID: -3143740026851688115
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CactusON_027
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 801
+        width: 312
+        height: 414
+      alignment: 9
+      pivot: {x: 0.49198717, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f8b98e4467343fac0800000000000000
+      internalID: -3822637483466122353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CactusON_028
+      rect:
+        serializedVersion: 2
+        x: 1806
+        y: 804
+        width: 311
+        height: 413
+      alignment: 9
+      pivot: {x: 0.4903537, y: 0.50121063}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d91059d47cb102c40800000000000000
+      internalID: 5485414888951316893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CactusON_029
+      rect:
+        serializedVersion: 2
+        x: 1519
+        y: 1219
+        width: 313
+        height: 413
+      alignment: 9
+      pivot: {x: 0.49361023, y: 0.50121063}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ae1bc4cd91c28c4b0800000000000000
+      internalID: -5420033661958573590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

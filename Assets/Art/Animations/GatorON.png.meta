@@ -1,0 +1,848 @@
+fileFormatVersion: 2
+guid: 5f8d1e4a59cffe94dba3cba2fe27d12d
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 3524687394115853494
+    second: GatorON_000
+  - first:
+      213: 7165011774319828297
+    second: GatorON_001
+  - first:
+      213: 1860149552950143164
+    second: GatorON_002
+  - first:
+      213: -1558221651880121864
+    second: GatorON_003
+  - first:
+      213: -1857466122666308744
+    second: GatorON_004
+  - first:
+      213: -7686353569375092203
+    second: GatorON_005
+  - first:
+      213: -3988858085904376522
+    second: GatorON_006
+  - first:
+      213: -2762669583456202810
+    second: GatorON_007
+  - first:
+      213: -2941619490846085618
+    second: GatorON_008
+  - first:
+      213: 1411983934909751555
+    second: GatorON_009
+  - first:
+      213: 1569269211117509081
+    second: GatorON_010
+  - first:
+      213: -8895041623328883977
+    second: GatorON_011
+  - first:
+      213: -2369949774964333858
+    second: GatorON_012
+  - first:
+      213: 8145696670597467863
+    second: GatorON_013
+  - first:
+      213: -7497866127786420277
+    second: GatorON_014
+  - first:
+      213: 1344707942878602618
+    second: GatorON_015
+  - first:
+      213: 3628500130129897782
+    second: GatorON_016
+  - first:
+      213: -3787727115530927783
+    second: GatorON_017
+  - first:
+      213: -4848262640944584611
+    second: GatorON_018
+  - first:
+      213: -831263552382781277
+    second: GatorON_019
+  - first:
+      213: -1207490312099950148
+    second: GatorON_020
+  - first:
+      213: 6755974925515952803
+    second: GatorON_021
+  - first:
+      213: -4189718852589737989
+    second: GatorON_022
+  - first:
+      213: 692883319130901830
+    second: GatorON_023
+  - first:
+      213: 5456501670395874795
+    second: GatorON_024
+  - first:
+      213: 8257997122502690561
+    second: GatorON_025
+  - first:
+      213: 6874863350896367940
+    second: GatorON_026
+  - first:
+      213: 4990630630872114777
+    second: GatorON_027
+  - first:
+      213: 7244482334749083859
+    second: GatorON_028
+  - first:
+      213: -273697625542441349
+    second: GatorON_029
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: GatorON_000
+      rect:
+        serializedVersion: 2
+        x: 703
+        y: 1792
+        width: 349
+        height: 255
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5019608}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6bc9296a2843ae030800000000000000
+      internalID: 3524687394115853494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GatorON_001
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1791
+        width: 349
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 94d13d33f3c3f6360800000000000000
+      internalID: 7165011774319828297
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GatorON_002
+      rect:
+        serializedVersion: 2
+        x: 703
+        y: 1535
+        width: 348
+        height: 255
+      alignment: 9
+      pivot: {x: 0.49856323, y: 0.5019608}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cb8e1b4b92490d910800000000000000
+      internalID: 1860149552950143164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GatorON_003
+      rect:
+        serializedVersion: 2
+        x: 1053
+        y: 1535
+        width: 348
+        height: 255
+      alignment: 9
+      pivot: {x: 0.50143677, y: 0.5019608}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8f9ec56d9a5106ae0800000000000000
+      internalID: -1558221651880121864
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GatorON_004
+      rect:
+        serializedVersion: 2
+        x: 699
+        y: 763
+        width: 346
+        height: 256
+      alignment: 9
+      pivot: {x: 0.5014451, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 87b07281764f836e0800000000000000
+      internalID: -1857466122666308744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GatorON_005
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1276
+        width: 347
+        height: 256
+      alignment: 9
+      pivot: {x: 0.5028818, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 51287571726945590800000000000000
+      internalID: -7686353569375092203
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GatorON_006
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 762
+        width: 346
+        height: 256
+      alignment: 9
+      pivot: {x: 0.5043353, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 63d993a64bab4a8c0800000000000000
+      internalID: -3988858085904376522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GatorON_007
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 761
+        width: 346
+        height: 256
+      alignment: 9
+      pivot: {x: 0.5043353, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6cf015ea6a609a9d0800000000000000
+      internalID: -2762669583456202810
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GatorON_008
+      rect:
+        serializedVersion: 2
+        x: 1047
+        y: 763
+        width: 346
+        height: 256
+      alignment: 9
+      pivot: {x: 0.5014451, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e0ee0cf88a44d27d0800000000000000
+      internalID: -2941619490846085618
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GatorON_009
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 1791
+        width: 349
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 301aad468ef589310800000000000000
+      internalID: 1411983934909751555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GatorON_010
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 503
+        width: 345
+        height: 256
+      alignment: 9
+      pivot: {x: 0.5057971, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9d9dd9d780a27c510800000000000000
+      internalID: 1569269211117509081
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GatorON_011
+      rect:
+        serializedVersion: 2
+        x: 695
+        y: 505
+        width: 343
+        height: 255
+      alignment: 9
+      pivot: {x: 0.5087463, y: 0.5019608}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7fafa2385c67e8480800000000000000
+      internalID: -8895041623328883977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GatorON_012
+      rect:
+        serializedVersion: 2
+        x: 1395
+        y: 763
+        width: 346
+        height: 255
+      alignment: 9
+      pivot: {x: 0.5043353, y: 0.5019608}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ed2ebb77c3f3c1fd0800000000000000
+      internalID: -2369949774964333858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GatorON_013
+      rect:
+        serializedVersion: 2
+        x: 1403
+        y: 1534
+        width: 348
+        height: 255
+      alignment: 9
+      pivot: {x: 0.50143677, y: 0.5019608}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7de4b03d6f35b0170800000000000000
+      internalID: 8145696670597467863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GatorON_014
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 1277
+        width: 347
+        height: 255
+      alignment: 9
+      pivot: {x: 0.5028818, y: 0.5019608}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bc75bdf6b7a32f790800000000000000
+      internalID: -7497866127786420277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GatorON_015
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 504
+        width: 345
+        height: 255
+      alignment: 9
+      pivot: {x: 0.5057971, y: 0.5019608}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a75eceddfbc59a210800000000000000
+      internalID: 1344707942878602618
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GatorON_016
+      rect:
+        serializedVersion: 2
+        x: 349
+        y: 247
+        width: 345
+        height: 255
+      alignment: 9
+      pivot: {x: 0.5057971, y: 0.5019608}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 639e9dbc4a50b5230800000000000000
+      internalID: 3628500130129897782
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GatorON_017
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1534
+        width: 348
+        height: 255
+      alignment: 9
+      pivot: {x: 0.50143677, y: 0.5019608}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9510aa4b14a4f6bc0800000000000000
+      internalID: -3787727115530927783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GatorON_018
+      rect:
+        serializedVersion: 2
+        x: 351
+        y: 1534
+        width: 348
+        height: 255
+      alignment: 9
+      pivot: {x: 0.50143677, y: 0.5019608}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d5863b4b0d287bcb0800000000000000
+      internalID: -4848262640944584611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GatorON_019
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 246
+        width: 346
+        height: 255
+      alignment: 9
+      pivot: {x: 0.5043353, y: 0.5019608}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3a8be7d0432c674f0800000000000000
+      internalID: -831263552382781277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GatorON_020
+      rect:
+        serializedVersion: 2
+        x: 699
+        y: 1021
+        width: 347
+        height: 255
+      alignment: 9
+      pivot: {x: 0.5028818, y: 0.5019608}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cb19e8d65f12e3fe0800000000000000
+      internalID: -1207490312099950148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GatorON_021
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 1020
+        width: 347
+        height: 255
+      alignment: 9
+      pivot: {x: 0.5028818, y: 0.5019608}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3a213da666b02cd50800000000000000
+      internalID: 6755974925515952803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GatorON_022
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1019
+        width: 347
+        height: 255
+      alignment: 9
+      pivot: {x: 0.5028818, y: 0.5019608}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bf7a1a2d6e02bd5c0800000000000000
+      internalID: -4189718852589737989
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GatorON_023
+      rect:
+        serializedVersion: 2
+        x: 1405
+        y: 1791
+        width: 348
+        height: 256
+      alignment: 9
+      pivot: {x: 0.50143677, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 64d479b25bd9d9900800000000000000
+      internalID: 692883319130901830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GatorON_024
+      rect:
+        serializedVersion: 2
+        x: 1048
+        y: 1021
+        width: 347
+        height: 255
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5019608}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bed85440c5369bb40800000000000000
+      internalID: 5456501670395874795
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GatorON_025
+      rect:
+        serializedVersion: 2
+        x: 1397
+        y: 1020
+        width: 347
+        height: 255
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5019608}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 10788f251ac4a9270800000000000000
+      internalID: 8257997122502690561
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GatorON_026
+      rect:
+        serializedVersion: 2
+        x: 701
+        y: 1278
+        width: 348
+        height: 255
+      alignment: 9
+      pivot: {x: 0.50143677, y: 0.5019608}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 44997850bcb686f50800000000000000
+      internalID: 6874863350896367940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GatorON_027
+      rect:
+        serializedVersion: 2
+        x: 1051
+        y: 1278
+        width: 348
+        height: 255
+      alignment: 9
+      pivot: {x: 0.49856323, y: 0.5019608}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 956e0560e18424540800000000000000
+      internalID: 4990630630872114777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GatorON_028
+      rect:
+        serializedVersion: 2
+        x: 1401
+        y: 1277
+        width: 348
+        height: 255
+      alignment: 9
+      pivot: {x: 0.49856323, y: 0.5019608}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d8cf40fc42998460800000000000000
+      internalID: 7244482334749083859
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GatorON_029
+      rect:
+        serializedVersion: 2
+        x: 1054
+        y: 1792
+        width: 349
+        height: 255
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5019608}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b76ccada571a33cf0800000000000000
+      internalID: -273697625542441349
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

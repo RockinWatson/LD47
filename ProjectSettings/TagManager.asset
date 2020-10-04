@@ -44,11 +44,23 @@ TagManager:
   - name: BACK
     uniqueID: 2601185167
     locked: 0
-  - name: TEMPbackground
+  - name: Sky1
+    uniqueID: 475017235
+    locked: 0
+  - name: Sky234
+    uniqueID: 1028097797
+    locked: 0
+  - name: Floor
     uniqueID: 334052541
     locked: 0
-  - name: TEMPband
+  - name: Band
     uniqueID: 1862803341
+    locked: 0
+  - name: ConsoleBack
+    uniqueID: 1017137579
+    locked: 0
+  - name: ConsoleMId
+    uniqueID: 2343598317
     locked: 0
   - name: FRONT
     uniqueID: 858085755

@@ -1,0 +1,848 @@
+fileFormatVersion: 2
+guid: 7bd377af5fc3aa545809e1d290daff1c
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -6757933222713804663
+    second: Fan2_000
+  - first:
+      213: 6308671524002561904
+    second: Fan2_001
+  - first:
+      213: -1865079011382386634
+    second: Fan2_002
+  - first:
+      213: 7829571555078524366
+    second: Fan2_003
+  - first:
+      213: -634658472312630152
+    second: Fan2_004
+  - first:
+      213: -8438732887943143473
+    second: Fan2_005
+  - first:
+      213: 6561863748910531661
+    second: Fan2_006
+  - first:
+      213: -6008596536420051767
+    second: Fan2_007
+  - first:
+      213: 2761281819805442155
+    second: Fan2_008
+  - first:
+      213: -8642323090835109846
+    second: Fan2_009
+  - first:
+      213: -5771489349505628142
+    second: Fan2_010
+  - first:
+      213: -5112150928171552774
+    second: Fan2_011
+  - first:
+      213: -865294316265856722
+    second: Fan2_012
+  - first:
+      213: -3258666639256095134
+    second: Fan2_013
+  - first:
+      213: -1255686510638087311
+    second: Fan2_014
+  - first:
+      213: -1259301525058777239
+    second: Fan2_015
+  - first:
+      213: 5758553205651302081
+    second: Fan2_016
+  - first:
+      213: -1837872661473064869
+    second: Fan2_017
+  - first:
+      213: 4963759845411285134
+    second: Fan2_018
+  - first:
+      213: 8007931241846892607
+    second: Fan2_019
+  - first:
+      213: -8162402521432312021
+    second: Fan2_020
+  - first:
+      213: -7651338709434637697
+    second: Fan2_021
+  - first:
+      213: -8905946618973754163
+    second: Fan2_022
+  - first:
+      213: -1742481950846337141
+    second: Fan2_023
+  - first:
+      213: -2630475694196390362
+    second: Fan2_024
+  - first:
+      213: 5929178102758708160
+    second: Fan2_025
+  - first:
+      213: 4471404903631642161
+    second: Fan2_026
+  - first:
+      213: 195401417999590108
+    second: Fan2_027
+  - first:
+      213: 8054351691081365877
+    second: Fan2_028
+  - first:
+      213: -4520478724992947827
+    second: Fan2_029
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Fan2_000
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1097
+        width: 305
+        height: 474
+      alignment: 9
+      pivot: {x: 0.5032787, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 988355cf98ff632a0800000000000000
+      internalID: -6757933222713804663
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fan2_001
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 147
+        width: 306
+        height: 472
+      alignment: 9
+      pivot: {x: 0.501634, y: 0.49788135}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 07f7bc88357ec8750800000000000000
+      internalID: 6308671524002561904
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fan2_002
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 621
+        width: 303
+        height: 474
+      alignment: 9
+      pivot: {x: 0.5066007, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 63024805588ed16e0800000000000000
+      internalID: -1865079011382386634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fan2_003
+      rect:
+        serializedVersion: 2
+        x: 306
+        y: 624
+        width: 302
+        height: 471
+      alignment: 9
+      pivot: {x: 0.50165564, y: 0.4968153}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ecd45f3b8d938ac60800000000000000
+      internalID: 7829571555078524366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fan2_004
+      rect:
+        serializedVersion: 2
+        x: 610
+        y: 629
+        width: 295
+        height: 469
+      alignment: 9
+      pivot: {x: 0.5, y: 0.4946695}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8741d146b7d3137f0800000000000000
+      internalID: -634658472312630152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fan2_005
+      rect:
+        serializedVersion: 2
+        x: 1482
+        y: 1121
+        width: 293
+        height: 461
+      alignment: 9
+      pivot: {x: 0.5, y: 0.48590022}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fcf1eb3162993ea80800000000000000
+      internalID: -8438732887943143473
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fan2_006
+      rect:
+        serializedVersion: 2
+        x: 1713
+        y: 194
+        width: 299
+        height: 460
+      alignment: 9
+      pivot: {x: 0.49665552, y: 0.4847826}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d44435a305c601b50800000000000000
+      internalID: 6561863748910531661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fan2_007
+      rect:
+        serializedVersion: 2
+        x: 1765
+        y: 659
+        width: 293
+        height: 460
+      alignment: 9
+      pivot: {x: 0.49317408, y: 0.4847826}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c45a08f84d2d9ca0800000000000000
+      internalID: -6008596536420051767
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fan2_008
+      rect:
+        serializedVersion: 2
+        x: 2014
+        y: 197
+        width: 284
+        height: 460
+      alignment: 9
+      pivot: {x: 0.4947183, y: 0.4847826}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b606f3a6f2b025620800000000000000
+      internalID: 2761281819805442155
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fan2_009
+      rect:
+        serializedVersion: 2
+        x: 907
+        y: 650
+        width: 285
+        height: 464
+      alignment: 9
+      pivot: {x: 0.48596492, y: 0.48922414}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a280e9810fc401880800000000000000
+      internalID: -8642323090835109846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fan2_010
+      rect:
+        serializedVersion: 2
+        x: 1432
+        y: 190
+        width: 279
+        height: 462
+      alignment: 9
+      pivot: {x: 0.4856631, y: 0.48701298}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 21844c9e30d87efa0800000000000000
+      internalID: -5771489349505628142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fan2_011
+      rect:
+        serializedVersion: 2
+        x: 612
+        y: 1106
+        width: 279
+        height: 469
+      alignment: 9
+      pivot: {x: 0.4749104, y: 0.4946695}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: affa620f0ddfd09b0800000000000000
+      internalID: -5112150928171552774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fan2_012
+      rect:
+        serializedVersion: 2
+        x: 890
+        y: 159
+        width: 271
+        height: 468
+      alignment: 9
+      pivot: {x: 0.48523986, y: 0.49358973}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e212fc4676bddf3f0800000000000000
+      internalID: -865294316265856722
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fan2_013
+      rect:
+        serializedVersion: 2
+        x: 1163
+        y: 184
+        width: 267
+        height: 464
+      alignment: 9
+      pivot: {x: 0.4812734, y: 0.48922414}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 26679bde4f3e6c2d0800000000000000
+      internalID: -3258666639256095134
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fan2_014
+      rect:
+        serializedVersion: 2
+        x: 1777
+        y: 1587
+        width: 274
+        height: 460
+      alignment: 9
+      pivot: {x: 0.48722628, y: 0.4847826}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 173ca2085c7e29ee0800000000000000
+      internalID: -1255686510638087311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fan2_015
+      rect:
+        serializedVersion: 2
+        x: 1194
+        y: 654
+        width: 273
+        height: 463
+      alignment: 9
+      pivot: {x: 0.489011, y: 0.48812094}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 96f83cd5fef068ee0800000000000000
+      internalID: -1259301525058777239
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fan2_016
+      rect:
+        serializedVersion: 2
+        x: 2053
+        y: 1588
+        width: 275
+        height: 459
+      alignment: 9
+      pivot: {x: 0.49636364, y: 0.48583877}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1c6680361ad7aef40800000000000000
+      internalID: 5758553205651302081
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fan2_017
+      rect:
+        serializedVersion: 2
+        x: 1497
+        y: 1586
+        width: 278
+        height: 461
+      alignment: 9
+      pivot: {x: 0.4910072, y: 0.48590022}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b580f764d809e76e0800000000000000
+      internalID: -1837872661473064869
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fan2_018
+      rect:
+        serializedVersion: 2
+        x: 612
+        y: 159
+        width: 276
+        height: 468
+      alignment: 9
+      pivot: {x: 0.4981884, y: 0.49358973}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e886610c741d2e440800000000000000
+      internalID: 4963759845411285134
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fan2_019
+      rect:
+        serializedVersion: 2
+        x: 611
+        y: 1577
+        width: 280
+        height: 470
+      alignment: 9
+      pivot: {x: 0.5089286, y: 0.49574468}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f3869006903e12f60800000000000000
+      internalID: 8007931241846892607
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fan2_020
+      rect:
+        serializedVersion: 2
+        x: 1469
+        y: 656
+        width: 294
+        height: 461
+      alignment: 9
+      pivot: {x: 0.49829933, y: 0.48590022}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b27364c272259be80800000000000000
+      internalID: -8162402521432312021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fan2_021
+      rect:
+        serializedVersion: 2
+        x: 893
+        y: 1116
+        width: 298
+        height: 464
+      alignment: 9
+      pivot: {x: 0.49161074, y: 0.48922414}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f72e3f77bfbf0d590800000000000000
+      internalID: -7651338709434637697
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fan2_022
+      rect:
+        serializedVersion: 2
+        x: 1777
+        y: 1126
+        width: 292
+        height: 459
+      alignment: 9
+      pivot: {x: 0.49828768, y: 0.48366013}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dcc6a7b5cb8b76480800000000000000
+      internalID: -8905946618973754163
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fan2_023
+      rect:
+        serializedVersion: 2
+        x: 1193
+        y: 1119
+        width: 287
+        height: 463
+      alignment: 9
+      pivot: {x: 0.5069686, y: 0.48812094}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b8f3644d5e571d7e0800000000000000
+      internalID: -1742481950846337141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fan2_024
+      rect:
+        serializedVersion: 2
+        x: 893
+        y: 1582
+        width: 298
+        height: 465
+      alignment: 9
+      pivot: {x: 0.50503355, y: 0.4903226}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 62600210b4cae7bd0800000000000000
+      internalID: -2630475694196390362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fan2_025
+      rect:
+        serializedVersion: 2
+        x: 1193
+        y: 1584
+        width: 302
+        height: 463
+      alignment: 9
+      pivot: {x: 0.50827813, y: 0.48812094}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0c315f0021ca84250800000000000000
+      internalID: 5929178102758708160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fan2_026
+      rect:
+        serializedVersion: 2
+        x: 310
+        y: 1576
+        width: 299
+        height: 471
+      alignment: 9
+      pivot: {x: 0.5100334, y: 0.4968153}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 13e57efb11f9d0e30800000000000000
+      internalID: 4471404903631642161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fan2_027
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 145
+        width: 301
+        height: 474
+      alignment: 9
+      pivot: {x: 0.49667773, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cd2297ced8436b200800000000000000
+      internalID: 195401417999590108
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fan2_028
+      rect:
+        serializedVersion: 2
+        x: 308
+        y: 1100
+        width: 302
+        height: 471
+      alignment: 9
+      pivot: {x: 0.50827813, y: 0.4968153}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 579b8f2703ec6cf60800000000000000
+      internalID: 8054351691081365877
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fan2_029
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1573
+        width: 307
+        height: 474
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d89a516dc880441c0800000000000000
+      internalID: -4520478724992947827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

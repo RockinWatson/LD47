@@ -1,0 +1,1568 @@
+fileFormatVersion: 2
+guid: eaf41f964d23f69419c246e8605edb8f
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -6302094022192967664
+    second: CactusOff_000
+  - first:
+      213: -5072963468907289377
+    second: CactusOff_001
+  - first:
+      213: 8400994486401970218
+    second: CactusOff_002
+  - first:
+      213: 2812143900637190046
+    second: CactusOff_003
+  - first:
+      213: 1793246845084772970
+    second: CactusOff_004
+  - first:
+      213: -2085281380333468202
+    second: CactusOff_005
+  - first:
+      213: 5082430096909930567
+    second: CactusOff_006
+  - first:
+      213: 6253080015287566982
+    second: CactusOff_007
+  - first:
+      213: -3100806343627288151
+    second: CactusOff_008
+  - first:
+      213: -3941760013087947308
+    second: CactusOff_009
+  - first:
+      213: 5685309370441400613
+    second: CactusOff_010
+  - first:
+      213: -1579454016637755504
+    second: CactusOff_011
+  - first:
+      213: -7691825685857186830
+    second: CactusOff_012
+  - first:
+      213: 2911907569872121963
+    second: CactusOff_013
+  - first:
+      213: -1180294590418396801
+    second: CactusOff_014
+  - first:
+      213: -6013828520723761312
+    second: CactusOff_015
+  - first:
+      213: 7837358124984573190
+    second: CactusOff_016
+  - first:
+      213: 1204124639451452219
+    second: CactusOff_017
+  - first:
+      213: -547556453444186775
+    second: CactusOff_018
+  - first:
+      213: -1184036186606480497
+    second: CactusOff_019
+  - first:
+      213: -3918943327073159934
+    second: CactusOff_020
+  - first:
+      213: 8648539560794284381
+    second: CactusOff_021
+  - first:
+      213: 6984636572776436566
+    second: CactusOff_022
+  - first:
+      213: 7893729044343295742
+    second: CactusOff_023
+  - first:
+      213: -4716676054992317434
+    second: CactusOff_024
+  - first:
+      213: -4604078625111637351
+    second: CactusOff_025
+  - first:
+      213: 4654497137250002767
+    second: CactusOff_026
+  - first:
+      213: 3287158012749207291
+    second: CactusOff_027
+  - first:
+      213: 3784806358238068736
+    second: CactusOff_028
+  - first:
+      213: 5526085191449327068
+    second: CactusOff_029
+  - first:
+      213: 970573804626769009
+    second: Speaker_000
+  - first:
+      213: -1763677894515535138
+    second: Speaker_001
+  - first:
+      213: 292685873509738370
+    second: Speaker_002
+  - first:
+      213: -5754310111965883822
+    second: Speaker_003
+  - first:
+      213: 4606634338098639522
+    second: Speaker_004
+  - first:
+      213: 5509408273606290867
+    second: Speaker_005
+  - first:
+      213: -342391113585375039
+    second: Speaker_006
+  - first:
+      213: 7081230566483331558
+    second: Speaker_007
+  - first:
+      213: -3299552920710645738
+    second: Speaker_008
+  - first:
+      213: 6747404263568191557
+    second: Speaker_009
+  - first:
+      213: -954736423331188319
+    second: Speaker_010
+  - first:
+      213: -2882288263764477429
+    second: Speaker_011
+  - first:
+      213: -5175539431936135535
+    second: Speaker_012
+  - first:
+      213: -9216216438744080989
+    second: Speaker_013
+  - first:
+      213: 8067829558342899061
+    second: Speaker_014
+  - first:
+      213: 199440867014713382
+    second: Speaker_015
+  - first:
+      213: 3943173372519044465
+    second: Speaker_016
+  - first:
+      213: -296028796640401580
+    second: Speaker_017
+  - first:
+      213: 758785014258370787
+    second: Speaker_018
+  - first:
+      213: -2278763186075856881
+    second: Speaker_019
+  - first:
+      213: -8607264222816320022
+    second: Speaker_020
+  - first:
+      213: -4997885989798393881
+    second: Speaker_021
+  - first:
+      213: -9200976769129209900
+    second: Speaker_022
+  - first:
+      213: 945074981159575178
+    second: Speaker_023
+  - first:
+      213: -747700143337067020
+    second: Speaker_024
+  - first:
+      213: -3853882780845964468
+    second: Speaker_025
+  - first:
+      213: -609477859130667873
+    second: Speaker_026
+  - first:
+      213: -6257687841171619933
+    second: Speaker_027
+  - first:
+      213: -7710625262486970373
+    second: Speaker_028
+  - first:
+      213: 4379313396470788105
+    second: Speaker_029
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: CactusOff_000
+      rect:
+        serializedVersion: 2
+        x: 1897
+        y: 1634
+        width: 314
+        height: 413
+      alignment: 9
+      pivot: {x: 0.5, y: 0.50121063}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 010531270e67a88a0800000000000000
+      internalID: -6302094022192967664
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CactusOff_001
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1633
+        width: 314
+        height: 414
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fd46f3d4a963999b0800000000000000
+      internalID: -5072963468907289377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CactusOff_002
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1217
+        width: 314
+        height: 414
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a20310a99f3569470800000000000000
+      internalID: 8400994486401970218
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CactusOff_003
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 801
+        width: 314
+        height: 414
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e97d2ce6afdb60720800000000000000
+      internalID: 2812143900637190046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CactusOff_004
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 385
+        width: 314
+        height: 414
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a6a2edb2184e2e810800000000000000
+      internalID: 1793246845084772970
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CactusOff_005
+      rect:
+        serializedVersion: 2
+        x: 317
+        y: 1633
+        width: 314
+        height: 414
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6d5cc7402a79f03e0800000000000000
+      internalID: -2085281380333468202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CactusOff_006
+      rect:
+        serializedVersion: 2
+        x: 317
+        y: 1217
+        width: 314
+        height: 414
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 740121ace3b688640800000000000000
+      internalID: 5082430096909930567
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CactusOff_007
+      rect:
+        serializedVersion: 2
+        x: 317
+        y: 801
+        width: 314
+        height: 414
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6824f47c42767c650800000000000000
+      internalID: 6253080015287566982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CactusOff_008
+      rect:
+        serializedVersion: 2
+        x: 317
+        y: 385
+        width: 314
+        height: 414
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9a151da2f09b7f4d0800000000000000
+      internalID: -3100806343627288151
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CactusOff_009
+      rect:
+        serializedVersion: 2
+        x: 633
+        y: 1633
+        width: 314
+        height: 414
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d5cd06072e0c49c0800000000000000
+      internalID: -3941760013087947308
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CactusOff_010
+      rect:
+        serializedVersion: 2
+        x: 633
+        y: 1217
+        width: 314
+        height: 414
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5210c5710c646ee40800000000000000
+      internalID: 5685309370441400613
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CactusOff_011
+      rect:
+        serializedVersion: 2
+        x: 633
+        y: 801
+        width: 314
+        height: 414
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 09f1e3fa0f6a41ae0800000000000000
+      internalID: -1579454016637755504
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CactusOff_012
+      rect:
+        serializedVersion: 2
+        x: 633
+        y: 385
+        width: 314
+        height: 414
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2fbc140ba45214590800000000000000
+      internalID: -7691825685857186830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CactusOff_013
+      rect:
+        serializedVersion: 2
+        x: 949
+        y: 1633
+        width: 314
+        height: 414
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b60bff0c18c296820800000000000000
+      internalID: 2911907569872121963
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CactusOff_014
+      rect:
+        serializedVersion: 2
+        x: 949
+        y: 1217
+        width: 314
+        height: 414
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f79dbcfc250ce9fe0800000000000000
+      internalID: -1180294590418396801
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CactusOff_015
+      rect:
+        serializedVersion: 2
+        x: 949
+        y: 801
+        width: 314
+        height: 414
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 067b522b2d69a8ca0800000000000000
+      internalID: -6013828520723761312
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CactusOff_016
+      rect:
+        serializedVersion: 2
+        x: 949
+        y: 385
+        width: 314
+        height: 414
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 60d1a39c0b3e3cc60800000000000000
+      internalID: 7837358124984573190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CactusOff_017
+      rect:
+        serializedVersion: 2
+        x: 1897
+        y: 1219
+        width: 314
+        height: 413
+      alignment: 9
+      pivot: {x: 0.5, y: 0.50121063}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b339cc7daf8e5b010800000000000000
+      internalID: 1204124639451452219
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CactusOff_018
+      rect:
+        serializedVersion: 2
+        x: 1265
+        y: 1633
+        width: 314
+        height: 414
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 96d8cf18e40b668f0800000000000000
+      internalID: -547556453444186775
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CactusOff_019
+      rect:
+        serializedVersion: 2
+        x: 1265
+        y: 1217
+        width: 314
+        height: 414
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f83dc109c55719fe0800000000000000
+      internalID: -1184036186606480497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CactusOff_020
+      rect:
+        serializedVersion: 2
+        x: 1265
+        y: 801
+        width: 314
+        height: 414
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 205bae6becd1d99c0800000000000000
+      internalID: -3918943327073159934
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CactusOff_021
+      rect:
+        serializedVersion: 2
+        x: 1265
+        y: 385
+        width: 314
+        height: 414
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d516e0b98e8c50870800000000000000
+      internalID: 8648539560794284381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CactusOff_022
+      rect:
+        serializedVersion: 2
+        x: 1581
+        y: 1633
+        width: 314
+        height: 414
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6539a8de4f96ee060800000000000000
+      internalID: 6984636572776436566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CactusOff_023
+      rect:
+        serializedVersion: 2
+        x: 1581
+        y: 1217
+        width: 314
+        height: 414
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: efe04493eb82c8d60800000000000000
+      internalID: 7893729044343295742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CactusOff_024
+      rect:
+        serializedVersion: 2
+        x: 1581
+        y: 801
+        width: 314
+        height: 414
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 60497953e100b8eb0800000000000000
+      internalID: -4716676054992317434
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CactusOff_025
+      rect:
+        serializedVersion: 2
+        x: 1581
+        y: 385
+        width: 314
+        height: 414
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 992804842e60b10c0800000000000000
+      internalID: -4604078625111637351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CactusOff_026
+      rect:
+        serializedVersion: 2
+        x: 1897
+        y: 805
+        width: 314
+        height: 412
+      alignment: 9
+      pivot: {x: 0.5, y: 0.50242716}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f47ebd95c78189040800000000000000
+      internalID: 4654497137250002767
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CactusOff_027
+      rect:
+        serializedVersion: 2
+        x: 1897
+        y: 391
+        width: 314
+        height: 412
+      alignment: 9
+      pivot: {x: 0.5, y: 0.50242716}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bf6de76ebc45e9d20800000000000000
+      internalID: 3287158012749207291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CactusOff_028
+      rect:
+        serializedVersion: 2
+        x: 2213
+        y: 1635
+        width: 314
+        height: 412
+      alignment: 9
+      pivot: {x: 0.5, y: 0.50242716}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0008b6e7455568430800000000000000
+      internalID: 3784806358238068736
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CactusOff_029
+      rect:
+        serializedVersion: 2
+        x: 2213
+        y: 1221
+        width: 314
+        height: 412
+      alignment: 9
+      pivot: {x: 0.5, y: 0.50242716}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cd532e2043990bc40800000000000000
+      internalID: 5526085191449327068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Speaker_000
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 173
+        width: 209
+        height: 210
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 174f315abbb287d00800000000000000
+      internalID: 970573804626769009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Speaker_001
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 173
+        width: 209
+        height: 210
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ed2513f9c482687e0800000000000000
+      internalID: -1763677894515535138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Speaker_002
+      rect:
+        serializedVersion: 2
+        x: 423
+        y: 173
+        width: 209
+        height: 210
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 287a2515044df0400800000000000000
+      internalID: 292685873509738370
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Speaker_003
+      rect:
+        serializedVersion: 2
+        x: 1478
+        y: 173
+        width: 208
+        height: 210
+      alignment: 9
+      pivot: {x: 0.50240386, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 252d5d8d0759420b0800000000000000
+      internalID: -5754310111965883822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Speaker_004
+      rect:
+        serializedVersion: 2
+        x: 1688
+        y: 173
+        width: 208
+        height: 210
+      alignment: 9
+      pivot: {x: 0.50240386, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2a27c74068d0eef30800000000000000
+      internalID: 4606634338098639522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Speaker_005
+      rect:
+        serializedVersion: 2
+        x: 2941
+        y: 167
+        width: 208
+        height: 208
+      alignment: 9
+      pivot: {x: 0.50240386, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3bda6ee72a9557c40800000000000000
+      internalID: 5509408273606290867
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Speaker_006
+      rect:
+        serializedVersion: 2
+        x: 2318
+        y: 373
+        width: 206
+        height: 210
+      alignment: 9
+      pivot: {x: 0.50242716, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1c84e74a8159f3bf0800000000000000
+      internalID: -342391113585375039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Speaker_007
+      rect:
+        serializedVersion: 2
+        x: 2213
+        y: 1009
+        width: 207
+        height: 210
+      alignment: 9
+      pivot: {x: 0.5048309, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e980e7aea5954260800000000000000
+      internalID: 7081230566483331558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Speaker_008
+      rect:
+        serializedVersion: 2
+        x: 2422
+        y: 1009
+        width: 204
+        height: 210
+      alignment: 9
+      pivot: {x: 0.502451, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6187073b912a532d0800000000000000
+      internalID: -3299552920710645738
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Speaker_009
+      rect:
+        serializedVersion: 2
+        x: 2739
+        y: 1840
+        width: 204
+        height: 207
+      alignment: 9
+      pivot: {x: 0.502451, y: 0.49275362}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 54030fdad6893ad50800000000000000
+      internalID: 6747404263568191557
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Speaker_010
+      rect:
+        serializedVersion: 2
+        x: 2526
+        y: 165
+        width: 206
+        height: 209
+      alignment: 9
+      pivot: {x: 0.50728154, y: 0.49760765}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1a1b739084810c2f0800000000000000
+      internalID: -954736423331188319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Speaker_011
+      rect:
+        serializedVersion: 2
+        x: 2736
+        y: 377
+        width: 209
+        height: 208
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b0a7a0a581e0008d0800000000000000
+      internalID: -2882288263764477429
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Speaker_012
+      rect:
+        serializedVersion: 2
+        x: 2529
+        y: 1839
+        width: 208
+        height: 208
+      alignment: 9
+      pivot: {x: 0.49759614, y: 0.49519232}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 19e6b6ece4acc28b0800000000000000
+      internalID: -5175539431936135535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Speaker_013
+      rect:
+        serializedVersion: 2
+        x: 2734
+        y: 165
+        width: 205
+        height: 209
+      alignment: 9
+      pivot: {x: 0.5097561, y: 0.50239235}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3ad1b838afb691080800000000000000
+      internalID: -9216216438744080989
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Speaker_014
+      rect:
+        serializedVersion: 2
+        x: 2529
+        y: 1420
+        width: 208
+        height: 207
+      alignment: 9
+      pivot: {x: 0.50240386, y: 0.5024155}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 575dc65fc30b6ff60800000000000000
+      internalID: 8067829558342899061
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Speaker_015
+      rect:
+        serializedVersion: 2
+        x: 2735
+        y: 1630
+        width: 205
+        height: 207
+      alignment: 9
+      pivot: {x: 0.50487804, y: 0.5072464}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 620ab10796e84c200800000000000000
+      internalID: 199440867014713382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Speaker_016
+      rect:
+        serializedVersion: 2
+        x: 2318
+        y: 161
+        width: 206
+        height: 210
+      alignment: 9
+      pivot: {x: 0.50728154, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 175d6cc5a47f8b630800000000000000
+      internalID: 3943173372519044465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Speaker_017
+      rect:
+        serializedVersion: 2
+        x: 2529
+        y: 1629
+        width: 204
+        height: 208
+      alignment: 9
+      pivot: {x: 0.502451, y: 0.49519232}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 45766fcb06b44ebf0800000000000000
+      internalID: -296028796640401580
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Speaker_018
+      rect:
+        serializedVersion: 2
+        x: 2422
+        y: 798
+        width: 209
+        height: 209
+      alignment: 9
+      pivot: {x: 0.5, y: 0.49760765}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e882c343feb78a00800000000000000
+      internalID: 758785014258370787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Speaker_019
+      rect:
+        serializedVersion: 2
+        x: 2213
+        y: 797
+        width: 207
+        height: 210
+      alignment: 9
+      pivot: {x: 0.5048309, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f0016b6a4f43060e0800000000000000
+      internalID: -2278763186075856881
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Speaker_020
+      rect:
+        serializedVersion: 2
+        x: 2632
+        y: 587
+        width: 207
+        height: 209
+      alignment: 9
+      pivot: {x: 0.5048309, y: 0.50239235}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ae5ca17eacadc8880800000000000000
+      internalID: -8607264222816320022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Speaker_021
+      rect:
+        serializedVersion: 2
+        x: 2213
+        y: 585
+        width: 207
+        height: 210
+      alignment: 9
+      pivot: {x: 0.5048309, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7e74a261c21f3aab0800000000000000
+      internalID: -4997885989798393881
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Speaker_022
+      rect:
+        serializedVersion: 2
+        x: 2422
+        y: 587
+        width: 208
+        height: 209
+      alignment: 9
+      pivot: {x: 0.50240386, y: 0.50239235}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4df9e6990609f4080800000000000000
+      internalID: -9200976769129209900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Speaker_023
+      rect:
+        serializedVersion: 2
+        x: 2526
+        y: 376
+        width: 208
+        height: 209
+      alignment: 9
+      pivot: {x: 0.50240386, y: 0.49760765}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a8e102a20b49d1d00800000000000000
+      internalID: 945074981159575178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Speaker_024
+      rect:
+        serializedVersion: 2
+        x: 1898
+        y: 179
+        width: 208
+        height: 210
+      alignment: 9
+      pivot: {x: 0.50240386, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4fda2ed5ea2af95f0800000000000000
+      internalID: -747700143337067020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Speaker_025
+      rect:
+        serializedVersion: 2
+        x: 2108
+        y: 179
+        width: 208
+        height: 210
+      alignment: 9
+      pivot: {x: 0.50240386, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c438ea19702448ac0800000000000000
+      internalID: -3853882780845964468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Speaker_026
+      rect:
+        serializedVersion: 2
+        x: 634
+        y: 173
+        width: 209
+        height: 210
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f9c0d04cd13ba87f0800000000000000
+      internalID: -609477859130667873
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Speaker_027
+      rect:
+        serializedVersion: 2
+        x: 845
+        y: 173
+        width: 209
+        height: 210
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3af3fa7201a3829a0800000000000000
+      internalID: -6257687841171619933
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Speaker_028
+      rect:
+        serializedVersion: 2
+        x: 1056
+        y: 173
+        width: 209
+        height: 210
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bff9f492d2b5ef490800000000000000
+      internalID: -7710625262486970373
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Speaker_029
+      rect:
+        serializedVersion: 2
+        x: 1267
+        y: 173
+        width: 209
+        height: 210
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 90030ccd45276cc30800000000000000
+      internalID: 4379313396470788105
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

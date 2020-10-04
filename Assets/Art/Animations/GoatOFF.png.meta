@@ -1,0 +1,848 @@
+fileFormatVersion: 2
+guid: 840ec2a87531ba2499cc2c83180d797c
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 6189068409440713937
+    second: GoatOFF_000
+  - first:
+      213: -5318891679640575416
+    second: GoatOFF_001
+  - first:
+      213: 9079697044042966738
+    second: GoatOFF_002
+  - first:
+      213: 3601360530978595885
+    second: GoatOFF_003
+  - first:
+      213: 7966653072930957070
+    second: GoatOFF_004
+  - first:
+      213: -5038841905074632156
+    second: GoatOFF_005
+  - first:
+      213: 8869877967209164934
+    second: GoatOFF_006
+  - first:
+      213: 8519003984964148553
+    second: GoatOFF_007
+  - first:
+      213: -6908172141177361017
+    second: GoatOFF_008
+  - first:
+      213: -4256765722540267612
+    second: GoatOFF_009
+  - first:
+      213: 5071819477689360790
+    second: GoatOFF_010
+  - first:
+      213: -5831649420282497171
+    second: GoatOFF_011
+  - first:
+      213: 6634449703679129603
+    second: GoatOFF_012
+  - first:
+      213: -9072717007074915805
+    second: GoatOFF_013
+  - first:
+      213: -5395524217328234447
+    second: GoatOFF_014
+  - first:
+      213: 389387274707064385
+    second: GoatOFF_015
+  - first:
+      213: -4645888712772565405
+    second: GoatOFF_016
+  - first:
+      213: -4111586331571532808
+    second: GoatOFF_017
+  - first:
+      213: -1174094652963842726
+    second: GoatOFF_018
+  - first:
+      213: 1200999020471924541
+    second: GoatOFF_019
+  - first:
+      213: 4163415521522285698
+    second: GoatOFF_020
+  - first:
+      213: 3582499888492083343
+    second: GoatOFF_021
+  - first:
+      213: 5857800741810946016
+    second: GoatOFF_022
+  - first:
+      213: 8880266665435041557
+    second: GoatOFF_023
+  - first:
+      213: -6763254483324347738
+    second: GoatOFF_024
+  - first:
+      213: 3812814303871755614
+    second: GoatOFF_025
+  - first:
+      213: -4764731411308756231
+    second: GoatOFF_026
+  - first:
+      213: -2097694473870505435
+    second: GoatOFF_027
+  - first:
+      213: 3847202132131944002
+    second: GoatOFF_028
+  - first:
+      213: -2670341296347811689
+    second: GoatOFF_029
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: GoatOFF_000
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 910
+        width: 338
+        height: 377
+      alignment: 9
+      pivot: {x: 0.50147927, y: 0.5106101}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1dc3e436decf3e550800000000000000
+      internalID: 6189068409440713937
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GoatOFF_001
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 532
+        width: 338
+        height: 376
+      alignment: 9
+      pivot: {x: 0.50147927, y: 0.5119681}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8422e34b2308f26b0800000000000000
+      internalID: -5318891679640575416
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GoatOFF_002
+      rect:
+        serializedVersion: 2
+        x: 1020
+        y: 911
+        width: 338
+        height: 375
+      alignment: 9
+      pivot: {x: 0.50147927, y: 0.5133333}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d66852fa50910e70800000000000000
+      internalID: 9079697044042966738
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GoatOFF_003
+      rect:
+        serializedVersion: 2
+        x: 680
+        y: 533
+        width: 338
+        height: 374
+      alignment: 9
+      pivot: {x: 0.50147927, y: 0.5147059}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d246715725a9af130800000000000000
+      internalID: 3601360530978595885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GoatOFF_004
+      rect:
+        serializedVersion: 2
+        x: 1360
+        y: 168
+        width: 338
+        height: 373
+      alignment: 9
+      pivot: {x: 0.50147927, y: 0.5160858}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e07e2dcb2cc3f8e60800000000000000
+      internalID: 7966653072930957070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GoatOFF_005
+      rect:
+        serializedVersion: 2
+        x: 342
+        y: 1668
+        width: 338
+        height: 379
+      alignment: 9
+      pivot: {x: 0.50147927, y: 0.50791556}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 42a8ca8fbff621ab0800000000000000
+      internalID: -5038841905074632156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GoatOFF_006
+      rect:
+        serializedVersion: 2
+        x: 681
+        y: 159
+        width: 337
+        height: 372
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5174731}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 680f09c3403281b70800000000000000
+      internalID: 8869877967209164934
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GoatOFF_007
+      rect:
+        serializedVersion: 2
+        x: 1700
+        y: 547
+        width: 338
+        height: 372
+      alignment: 9
+      pivot: {x: 0.50147927, y: 0.5174731}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 94ddceb1df4993670800000000000000
+      internalID: 8519003984964148553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GoatOFF_008
+      rect:
+        serializedVersion: 2
+        x: 1023
+        y: 1672
+        width: 338
+        height: 375
+      alignment: 9
+      pivot: {x: 0.50147927, y: 0.5133333}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 78dafd5e90e3120a0800000000000000
+      internalID: -6908172141177361017
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GoatOFF_009
+      rect:
+        serializedVersion: 2
+        x: 1020
+        y: 158
+        width: 338
+        height: 374
+      alignment: 9
+      pivot: {x: 0.50147927, y: 0.5147059}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a7adefe02eece4c0800000000000000
+      internalID: -4256765722540267612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GoatOFF_010
+      rect:
+        serializedVersion: 2
+        x: 341
+        y: 157
+        width: 338
+        height: 374
+      alignment: 9
+      pivot: {x: 0.50147927, y: 0.5147059}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 691e49c71f8b26640800000000000000
+      internalID: 5071819477689360790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GoatOFF_011
+      rect:
+        serializedVersion: 2
+        x: 341
+        y: 533
+        width: 337
+        height: 375
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5133333}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d67f279efb1d11fa0800000000000000
+      internalID: -5831649420282497171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GoatOFF_012
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1669
+        width: 339
+        height: 378
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5092593}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3087dfbcadc421c50800000000000000
+      internalID: 6634449703679129603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GoatOFF_013
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 156
+        width: 338
+        height: 374
+      alignment: 9
+      pivot: {x: 0.50147927, y: 0.5147059}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 32a87ad83fb371280800000000000000
+      internalID: -9072717007074915805
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GoatOFF_014
+      rect:
+        serializedVersion: 2
+        x: 1700
+        y: 173
+        width: 338
+        height: 372
+      alignment: 9
+      pivot: {x: 0.50147927, y: 0.5174731}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1301221af4f3f15b0800000000000000
+      internalID: -5395524217328234447
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GoatOFF_015
+      rect:
+        serializedVersion: 2
+        x: 1700
+        y: 921
+        width: 338
+        height: 373
+      alignment: 9
+      pivot: {x: 0.50147927, y: 0.5160858}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 146d8fcc9a1676500800000000000000
+      internalID: 389387274707064385
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GoatOFF_016
+      rect:
+        serializedVersion: 2
+        x: 681
+        y: 1288
+        width: 338
+        height: 378
+      alignment: 9
+      pivot: {x: 0.50147927, y: 0.5092593}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 366c139a4dc768fb0800000000000000
+      internalID: -4645888712772565405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GoatOFF_017
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 1289
+        width: 339
+        height: 377
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5106101}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8fbc35bf306b0f6c0800000000000000
+      internalID: -4111586331571532808
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GoatOFF_018
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 910
+        width: 337
+        height: 376
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5119681}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a55976d3227c4bfe0800000000000000
+      internalID: -1174094652963842726
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GoatOFF_019
+      rect:
+        serializedVersion: 2
+        x: 1360
+        y: 919
+        width: 338
+        height: 374
+      alignment: 9
+      pivot: {x: 0.50147927, y: 0.5147059}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d3732d6fe3ecaa010800000000000000
+      internalID: 1200999020471924541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GoatOFF_020
+      rect:
+        serializedVersion: 2
+        x: 1361
+        y: 1296
+        width: 338
+        height: 374
+      alignment: 9
+      pivot: {x: 0.50147927, y: 0.5147059}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 28cfeacab5c67c930800000000000000
+      internalID: 4163415521522285698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GoatOFF_021
+      rect:
+        serializedVersion: 2
+        x: 1701
+        y: 1298
+        width: 338
+        height: 373
+      alignment: 9
+      pivot: {x: 0.50147927, y: 0.5160858}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f88727deaa897b130800000000000000
+      internalID: 3582499888492083343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GoatOFF_022
+      rect:
+        serializedVersion: 2
+        x: 682
+        y: 1672
+        width: 339
+        height: 375
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5133333}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ef39ac1db61b4150800000000000000
+      internalID: 5857800741810946016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GoatOFF_023
+      rect:
+        serializedVersion: 2
+        x: 680
+        y: 909
+        width: 338
+        height: 377
+      alignment: 9
+      pivot: {x: 0.50147927, y: 0.5106101}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 51f8ff78b7b0d3b70800000000000000
+      internalID: 8880266665435041557
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GoatOFF_024
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1288
+        width: 337
+        height: 379
+      alignment: 9
+      pivot: {x: 0.5, y: 0.50791556}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6aa52e371e71422a0800000000000000
+      internalID: -6763254483324347738
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GoatOFF_025
+      rect:
+        serializedVersion: 2
+        x: 1703
+        y: 1674
+        width: 338
+        height: 373
+      alignment: 9
+      pivot: {x: 0.50147927, y: 0.5160858}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e55edc08866d9e430800000000000000
+      internalID: 3812814303871755614
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GoatOFF_026
+      rect:
+        serializedVersion: 2
+        x: 1363
+        y: 1673
+        width: 338
+        height: 374
+      alignment: 9
+      pivot: {x: 0.50147927, y: 0.5147059}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f2cbcaa60640edb0800000000000000
+      internalID: -4764731411308756231
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GoatOFF_027
+      rect:
+        serializedVersion: 2
+        x: 1360
+        y: 543
+        width: 338
+        height: 374
+      alignment: 9
+      pivot: {x: 0.50147927, y: 0.5147059}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 52a06a57dfd73e2e0800000000000000
+      internalID: -2097694473870505435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GoatOFF_028
+      rect:
+        serializedVersion: 2
+        x: 1021
+        y: 1295
+        width: 338
+        height: 375
+      alignment: 9
+      pivot: {x: 0.50147927, y: 0.5133333}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 24699d0b4f1046530800000000000000
+      internalID: 3847202132131944002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GoatOFF_029
+      rect:
+        serializedVersion: 2
+        x: 1020
+        y: 534
+        width: 338
+        height: 375
+      alignment: 9
+      pivot: {x: 0.50147927, y: 0.5133333}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 790f1223dba01fad0800000000000000
+      internalID: -2670341296347811689
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
