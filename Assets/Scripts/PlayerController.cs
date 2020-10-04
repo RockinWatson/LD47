@@ -52,6 +52,11 @@ namespace Assets.Scripts
                 FindObjectOfType<AudioManager>().Mute(AudioManager.Music.Lead);
                 FindObjectOfType<AudioManager>().Mute(AudioManager.Music.Melody);
             }
+
+            if (Input.GetKeyDown(KeyCode.L))
+            {
+                FindObjectOfType<AudioManager>().PlayFullBandReverse();
+            }
         }
     }
 }
