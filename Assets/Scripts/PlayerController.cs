@@ -41,23 +41,15 @@ namespace Assets.Scripts
                 FindObjectOfType<AudioManager>().Mute(AudioManager.Music.Drums);
             }
 
-            //Lead Controller
+            //LeadMelody Controller
             if (Input.GetKeyDown(KeyCode.Alpha4))
             {
                 FindObjectOfType<AudioManager>().UnMute(AudioManager.Music.Lead);
+                FindObjectOfType<AudioManager>().UnMute(AudioManager.Music.Melody);
             }
             if (Input.GetKeyDown(KeyCode.R))
             {
                 FindObjectOfType<AudioManager>().Mute(AudioManager.Music.Lead);
-            }
-
-            //Melody Controller
-            if (Input.GetKeyDown(KeyCode.Alpha5))
-            {
-                FindObjectOfType<AudioManager>().UnMute(AudioManager.Music.Melody);
-            }
-            if (Input.GetKeyDown(KeyCode.T))
-            {
                 FindObjectOfType<AudioManager>().Mute(AudioManager.Music.Melody);
             }
         }

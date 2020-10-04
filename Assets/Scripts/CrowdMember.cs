@@ -38,33 +38,30 @@ public class CrowdMember : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        var instrument = collision.gameObject.GetComponent<BandProperties>().Instrument[0];
+
         //Bass Collision
-        if (collision.gameObject.GetComponent<BandProperties>().Instrument == AudioManager.Music.Bass)
+        if (instrument == AudioManager.Music.Bass)
         {
             FindObjectOfType<AudioManager>().Mute(AudioManager.Music.Bass);
         }
 
         //Chords Collision
-        if (collision.gameObject.GetComponent<BandProperties>().Instrument == AudioManager.Music.Chords)
+        if (instrument == AudioManager.Music.Chords)
         {
             FindObjectOfType<AudioManager>().Mute(AudioManager.Music.Chords);
         }
 
         //Drums Collision
-        if (collision.gameObject.GetComponent<BandProperties>().Instrument == AudioManager.Music.Drums)
+        if (instrument == AudioManager.Music.Drums)
         {
             FindObjectOfType<AudioManager>().Mute(AudioManager.Music.Drums);
         }
 
-        //Lead Collision
-        if (collision.gameObject.GetComponent<BandProperties>().Instrument == AudioManager.Music.Lead)
+        //LeadMelody  Collision
+        if (instrument == AudioManager.Music.Lead)
         {
             FindObjectOfType<AudioManager>().Mute(AudioManager.Music.Lead);
-        }
-
-        //Melody Collision
-        if (collision.gameObject.GetComponent<BandProperties>().Instrument == AudioManager.Music.Melody)
-        {
             FindObjectOfType<AudioManager>().Mute(AudioManager.Music.Melody);
         }
     }
