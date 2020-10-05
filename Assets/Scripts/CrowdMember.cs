@@ -36,6 +36,17 @@ public class CrowdMember : MonoBehaviour
         return gameObject.transform.position;
     }
 
+    private void UpdateTrackMute(AudioManager.Music track)
+    {
+        FindObjectOfType<AudioManager>().Mute(track);
+        FindObjectOfType<PlayerController>().UpdateCanTurnOnTrack(AudioManager.Music.Bass, false);
+    }
+
+    private void UpdateTrackUnMute(AudioManager.Music track)
+    {
+        FindObjectOfType<PlayerController>().UpdateCanTurnOnTrack(track, true);
+    }
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
         var instrument = collision.gameObject.GetComponent<BandProperties>().Instrument[0];
@@ -43,26 +54,56 @@ public class CrowdMember : MonoBehaviour
         //Bass Collision
         if (instrument == AudioManager.Music.Bass)
         {
-            FindObjectOfType<AudioManager>().Mute(AudioManager.Music.Bass);
+            UpdateTrackMute(AudioManager.Music.Bass);
         }
 
         //Chords Collision
         if (instrument == AudioManager.Music.Chords)
         {
-            FindObjectOfType<AudioManager>().Mute(AudioManager.Music.Chords);
+            UpdateTrackMute(AudioManager.Music.Chords);
         }
 
         //Drums Collision
         if (instrument == AudioManager.Music.Drums)
         {
-            FindObjectOfType<AudioManager>().Mute(AudioManager.Music.Drums);
+            UpdateTrackMute(AudioManager.Music.Drums);
         }
 
         //LeadMelody  Collision
         if (instrument == AudioManager.Music.Lead)
         {
-            FindObjectOfType<AudioManager>().Mute(AudioManager.Music.Lead);
-            FindObjectOfType<AudioManager>().Mute(AudioManager.Music.Melody);
+            UpdateTrackMute(AudioManager.Music.Lead);
+            UpdateTrackMute(AudioManager.Music.Melody);
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        var instrument = collision.gameObject.GetComponent<BandProperties>().Instrument[0];
+
+        //Bass Collision
+        if (instrument == AudioManager.Music.Bass)
+        {
+            UpdateTrackUnMute(AudioManager.Music.Bass);
+        }
+
+        //Chords Collision
+        if (instrument == AudioManager.Music.Chords)
+        {
+            UpdateTrackUnMute(AudioManager.Music.Chords);
+        }
+
+        //Drums Collision
+        if (instrument == AudioManager.Music.Drums)
+        {
+            UpdateTrackUnMute(AudioManager.Music.Drums);
+        }
+
+        //LeadMelody  Collision
+        if (instrument == AudioManager.Music.Lead)
+        {
+            UpdateTrackUnMute(AudioManager.Music.Lead);
+            UpdateTrackUnMute(AudioManager.Music.Melody);
         }
     }
 }

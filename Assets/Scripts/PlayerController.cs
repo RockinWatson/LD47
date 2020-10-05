@@ -1,9 +1,26 @@
-﻿using UnityEngine;
+﻿using System;
+using System.Collections.Generic;
+using UnityEngine;
 
 namespace Assets.Scripts
 {
     public class PlayerController : MonoBehaviour
     {
+        private readonly Dictionary<AudioManager.Music, bool> _canTurnOnTrackDict = new Dictionary<AudioManager.Music, bool>();
+
+        private void Awake()
+        {
+            foreach (AudioManager.Music music in Enum.GetValues(typeof(AudioManager.Music)))
+            {
+                _canTurnOnTrackDict.Add(music, false);
+            }
+        }
+
+        public void UpdateCanTurnOnTrack(AudioManager.Music track, bool canTurnOn)
+        {
+            _canTurnOnTrackDict[track] = canTurnOn;
+        }
+
         private void Update()
         {
             ReadInputs();
@@ -11,12 +28,8 @@ namespace Assets.Scripts
 
         private void ReadInputs()
         {
-            if (true)
-            {
-
-            }
             //Bass Controller
-            if (Input.GetKeyDown(KeyCode.Alpha1))
+            if (Input.GetKeyDown(KeyCode.Alpha1) && _canTurnOnTrackDict[AudioManager.Music.Bass].Equals(true))
             {
                 FindObjectOfType<AudioManager>().UnMute(AudioManager.Music.Bass);
             }
@@ -26,7 +39,7 @@ namespace Assets.Scripts
             }
 
             //Chords Controller
-            if (Input.GetKeyDown(KeyCode.Alpha2))
+            if (Input.GetKeyDown(KeyCode.Alpha2) && _canTurnOnTrackDict[AudioManager.Music.Chords].Equals(true))
             {
                 FindObjectOfType<AudioManager>().UnMute(AudioManager.Music.Chords);
             }
@@ -36,7 +49,7 @@ namespace Assets.Scripts
             }
 
             //Drums Controller
-            if (Input.GetKeyDown(KeyCode.Alpha3))
+            if (Input.GetKeyDown(KeyCode.Alpha3) && _canTurnOnTrackDict[AudioManager.Music.Drums].Equals(true))
             {
                 FindObjectOfType<AudioManager>().UnMute(AudioManager.Music.Drums);
             }
@@ -46,7 +59,7 @@ namespace Assets.Scripts
             }
 
             //LeadMelody Controller
-            if (Input.GetKeyDown(KeyCode.Alpha4))
+            if (Input.GetKeyDown(KeyCode.Alpha4) && _canTurnOnTrackDict[AudioManager.Music.Lead].Equals(true))
             {
                 FindObjectOfType<AudioManager>().UnMute(AudioManager.Music.Lead);
                 FindObjectOfType<AudioManager>().UnMute(AudioManager.Music.Melody);
