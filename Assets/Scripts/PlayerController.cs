@@ -8,8 +8,18 @@ namespace Assets.Scripts
     {
         private readonly Dictionary<AudioManager.Music, bool> _canTurnOnTrackDict = new Dictionary<AudioManager.Music, bool>();
 
+        static private PlayerController _instance = null;
+        static public PlayerController Get() { return _instance; }
+
         private void Awake()
         {
+            if(_instance != null)
+            {
+                Debug.LogError("WTF - should not have two PlayerControllers.");
+                return;
+            }
+            _instance = this;
+
             foreach (AudioManager.Music music in Enum.GetValues(typeof(AudioManager.Music)))
             {
                 _canTurnOnTrackDict.Add(music, false);

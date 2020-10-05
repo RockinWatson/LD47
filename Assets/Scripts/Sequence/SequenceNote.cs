@@ -7,12 +7,33 @@ public class SequenceNote : MonoBehaviour
     [SerializeField] private Sequence.Arrow _arrow;
     [SerializeField] private SpriteRenderer _sprite = null;
 
+    public enum HitScore
+    {
+        MISSED = -1,
+        NOT_HIT = 0,
+        BAD = 1,
+        OKAY = 2,
+        GOOD = 3,
+        EXCELLENT = 4,
+    }
+    private HitScore _hitScore = HitScore.NOT_HIT;
+    public HitScore GetHitScore() { return _hitScore; }
+
+    public int SequenceID { get; set; }
+
+    private bool _wasActivateable = false;
+
     private void Update()
     {
         //@TODO: Check input to see if key is hit
-        if(IsInActiveRange())
+        if(IsActivateable())
         {
+            _wasActivateable = true;
             CheckInput();
+        }
+        else if(_wasActivateable)
+        {
+            _hitScore = HitScore.MISSED;
         }
 
         //@TODO: Move the note along...
@@ -60,6 +81,11 @@ public class SequenceNote : MonoBehaviour
         return Mathf.Abs(targetPos.x - ourPos.x);
     }
 
+    private bool IsActivateable()
+    {
+        return _hitScore == HitScore.NOT_HIT && IsInActiveRange();
+    }
+
     private bool IsInActiveRange()
     {
         return (GetDeltaXFromTarget() <= SequenceManager.Get().GetActiveTargetRange());
@@ -74,21 +100,25 @@ public class SequenceNote : MonoBehaviour
         if(deltaX <= targetRanges[(int)SequenceManager.TargetScore.EXCELLENT])
         {
             Debug.Log("EXCELLENT!");
+            _hitScore = HitScore.EXCELLENT;
             _sprite.color = Color.blue;
         }
         else if (deltaX <= targetRanges[(int)SequenceManager.TargetScore.GOOD])
         {
             Debug.Log("GOOD!");
+            _hitScore = HitScore.GOOD;
             _sprite.color = Color.green;
         }
         else if (deltaX <= targetRanges[(int)SequenceManager.TargetScore.OKAY])
         {
             Debug.Log("OKAY!");
+            _hitScore = HitScore.OKAY;
             _sprite.color = Color.yellow;
         }
         else if (deltaX <= targetRanges[(int)SequenceManager.TargetScore.BAD])
         {
             Debug.Log("BAD!");
+            _hitScore = HitScore.BAD;
             _sprite.color = Color.red;
         }
     }
@@ -100,6 +130,14 @@ public class SequenceNote : MonoBehaviour
 
     private void OnBecameInvisible()
     {
+        //@TODO: Remove ourselves from the queued sequence registry.
+        QueuedSequence queuedSequence = SequenceManager.Get().QueuedSequences()[SequenceID];
+        queuedSequence.RemoveNote(this);
+        if(!queuedSequence.HasActiveNotes())
+        {
+            SequenceManager.Get().QueuedSequences().Remove(queuedSequence.ID);
+        }
+
         Destroy(this.gameObject);
     }
 }

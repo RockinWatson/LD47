@@ -17,6 +17,9 @@ public class SequenceManager : MonoBehaviour
     [SerializeField] private float ARROW_SPEED = 3f;
     public float GetArrowSpeed() { return ARROW_SPEED; }
 
+    private Dictionary<int, QueuedSequence> _queuedSequences = new Dictionary<int, QueuedSequence>();
+    public Dictionary<int, QueuedSequence> QueuedSequences() { return _queuedSequences; }
+
     private float _sequenceTimer = 0f;
 
     public enum TargetScore
@@ -48,7 +51,7 @@ public class SequenceManager : MonoBehaviour
         //@TODO: Figure out how / when to play a new sequence
         if(_sequenceTimer <= 0f)
         {
-            PlayRandomSequence();
+            QueueRandomSequence();
         }
         else
         {
@@ -58,32 +61,51 @@ public class SequenceManager : MonoBehaviour
         //@TEMP: For now, just do it based on key stroke
         if(Input.GetKeyDown(KeyCode.P))
         {
-            PlayRandomSequence();
+            QueueRandomSequence();
         }
 
         //@TODO: Maybe also track input for arrows etc and accuracy?
     }
 
-    private void PlayRandomSequence()
+    private void QueueRandomSequence()
     {
         int i = Random.Range(0, _allSequences.Count);
         var sequence = _allSequences[i];
 
-        PlaySequence(sequence);
+        QueueSequence(sequence);
     }
 
-    private void PlaySequence(Sequence sequence)
+    private void QueueSequence(Sequence sequence)
     {
-        _sequenceTimer = 0f;
-        float xPos = 0f;
-        foreach(var note in sequence.Arrows)
+        if (sequence.Arrows != null && sequence.Arrows.Count > 0)
         {
-            int index = (int)note.Arrow;
-            GameObject arrow = Instantiate(ARROWS_PREFABS[index], ARROWS_POS[index] + Vector3.right * xPos, Quaternion.identity, this.transform);
+            // New sequence encountered, so restart the cooldown timer.
+            _sequenceTimer = 0f;
 
-            xPos += note.Time;
-            _sequenceTimer += note.Time;
+            // Create the queued sequence for tracking.
+            var queuedSequence = new QueuedSequence();
+
+            // Process and setup all the notes in the sequence.
+            float xPos = 0f;
+            foreach (var notePrefab in sequence.Arrows)
+            {
+                int arrowIndex = (int)notePrefab.Arrow;
+                GameObject arrow = Instantiate(ARROWS_PREFABS[arrowIndex], ARROWS_POS[arrowIndex] + Vector3.right * xPos, Quaternion.identity, this.transform);
+                SequenceNote note = arrow.GetComponent<SequenceNote>();
+                note.SequenceID = queuedSequence.ID;
+                queuedSequence.AddNote(note);
+
+                xPos += notePrefab.Time;
+                _sequenceTimer += notePrefab.Time;
+            }
+            //@NOTE: Adjusting sequence cooldown timer slightly to get sequences going back to back faster...
+            _sequenceTimer *= .75f;
+
+            _queuedSequences.Add(queuedSequence.ID, queuedSequence);
         }
-        _sequenceTimer *= .75f;
+        else
+        {
+            Debug.LogError("Sequence is malformed.");
+        }
     }
 }
