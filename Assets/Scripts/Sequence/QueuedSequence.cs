@@ -71,7 +71,7 @@ public class QueuedSequence
                     break;
                 }
             }
-            BandManager.Get().SequenceCompleted(SequenceNote.HitScore.MISSED);
+            //BandManager.Get().SequenceCompleted(SequenceNote.HitScore.MISSED);
         }
     }
 }

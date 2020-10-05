@@ -14,6 +14,7 @@ public class BandManager : MonoBehaviour
 
     [SerializeField] private float _fullBandAliveGracePeriod = 30f;
     private float _fullBandAliveGraceTimer;
+    private bool _hasHadFullBandPlay = false;
 
     static private BandManager _instance = null;
     static public BandManager Get() { return _instance; }
@@ -119,9 +120,11 @@ public class BandManager : MonoBehaviour
                 break;
             case SequenceNote.HitScore.BAD:
                 //@TODO: Reduce tier?
+                FanManager.Get().DecrementSpawnCooldownByTick();
                 break;
             case SequenceNote.HitScore.MISSED:
                 //@TODO: Stun random?
+                FanManager.Get().DecrementSpawnCooldownByTick(true);
                 break;
             case SequenceNote.HitScore.NOT_HIT:
                 Debug.LogWarning("This shouldn't happen - shouldn't get NOT HIT at this point.");
@@ -194,16 +197,20 @@ public class BandManager : MonoBehaviour
 
     private void CheckFullBandAliveRestartCounter()
     {
-        if(IsAnyPlayerNotPlaying())
+        if (IsAnyPlayerNotPlaying())
         {
-            _fullBandAliveGraceTimer -= Time.deltaTime;
-            if(_fullBandAliveGraceTimer <= 0f)
+            if (_hasHadFullBandPlay || FanManager.Get().IsAtMinSpawnCooldown())
             {
-                SceneManager.LoadScene("GameOverLoop");
+                _fullBandAliveGraceTimer -= Time.deltaTime;
+                if (_fullBandAliveGraceTimer <= 0f)
+                {
+                    SceneManager.LoadScene("GameOverLoop");
+                }
             }
         }
         else
         {
+            _hasHadFullBandPlay = true;
             _fullBandAliveGraceTimer = _fullBandAliveGracePeriod;
         }
     }

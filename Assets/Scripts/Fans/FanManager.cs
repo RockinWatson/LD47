@@ -24,6 +24,15 @@ public class FanManager : MonoBehaviour
     private float _spawnCooldown = 0f;
     [SerializeField] private float NORMAL_SPAWN_COOLDOWN = 10f;
     [SerializeField] private float SPAWN_COOLDOWN_DECREASE_RATE_PER_SEC = 0.05f;
+    [SerializeField] private float MIN_SPAWN_COOLDOWN = 0.1f;
+    public bool IsAtMinSpawnCooldown() { return Mathf.Approximately(NORMAL_SPAWN_COOLDOWN, MIN_SPAWN_COOLDOWN); }
+    public void DecrementSpawnCooldownByTick(bool andRampUpRate=false) {
+        NORMAL_SPAWN_COOLDOWN -= SPAWN_COOLDOWN_DECREASE_RATE_PER_SEC;
+        if (andRampUpRate)
+        {
+            SPAWN_COOLDOWN_DECREASE_RATE_PER_SEC += SPAWN_COOLDOWN_DECREASE_RATE_PER_SEC;
+        }
+    }
 
     [SerializeField] private float ATTACK_RANGE = 3f;
     public float GetAttackRange() { return ATTACK_RANGE; }
@@ -49,7 +58,7 @@ public class FanManager : MonoBehaviour
 
     private void Update()
     {
-        NORMAL_SPAWN_COOLDOWN = Mathf.Max(0.1f, NORMAL_SPAWN_COOLDOWN - Time.deltaTime * SPAWN_COOLDOWN_DECREASE_RATE_PER_SEC);
+        NORMAL_SPAWN_COOLDOWN = Mathf.Max(MIN_SPAWN_COOLDOWN, NORMAL_SPAWN_COOLDOWN - Time.deltaTime * SPAWN_COOLDOWN_DECREASE_RATE_PER_SEC);
         _spawnCooldown -= Time.deltaTime;
         if(_spawnCooldown <= 0f)
         {
