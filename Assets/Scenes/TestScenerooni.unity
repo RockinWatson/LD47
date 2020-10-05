@@ -1627,6 +1627,7 @@ MonoBehaviour:
     Pitch: 0
     Loop: 1
     Source: {fileID: 0}
+  _masterVolumeOverride: -1
 --- !u!4 &765637319
 Transform:
   m_ObjectHideFlags: 0

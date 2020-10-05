@@ -4,6 +4,7 @@ tpsheetFileNames:
 - Assets/Art/Animations/CactusANDspeaker.tpsheet
 - Assets/Art/Animations/CactusON.tpsheet
 - Assets/Art/Animations/ConsoleANDSpeakerSystem.tpsheet
+- Assets/Art/Animations/Explode.tpsheet
 - Assets/Art/Animations/Fan1.tpsheet
 - Assets/Art/Animations/Fan2.tpsheet
 - Assets/Art/Animations/Fan3.tpsheet
@@ -20,6 +21,7 @@ textureFileNames:
 - Assets/Art/Animations/CactusANDspeaker.png
 - Assets/Art/Animations/CactusON.png
 - Assets/Art/Animations/ConsoleANDSpeakerSystem.png
+- Assets/Art/Animations/Explode.png
 - Assets/Art/Animations/Fan1.png
 - Assets/Art/Animations/Fan2.png
 - Assets/Art/Animations/Fan3.png
@@ -36,6 +38,7 @@ normalmapFileNames:
 - Assets/Art/Animations/CactusANDspeaker_n.png
 - Assets/Art/Animations/CactusON_n.png
 - Assets/Art/Animations/ConsoleANDSpeakerSystem_n.png
+- 
 - Assets/Art/Animations/Fan1_n.png
 - Assets/Art/Animations/Fan2_n.png
 - Assets/Art/Animations/Fan3_n.png
