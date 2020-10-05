@@ -7,7 +7,15 @@ public class CrowdMember : MonoBehaviour
 
     public float MoveSpeed;
 
+    private float _initialScaleDistSqrMag;
+
     private bool _hasAttacked = false;
+
+    public void Start()
+    {
+        _initialScaleDistSqrMag = (BandMemberTarget.transform.position - this.transform.position).sqrMagnitude;
+        //_initialScaleDistSqrMag = (BandMemberTarget.transform.position - this.transform.position).magnitude;
+    }
 
     public void Update()
     {
@@ -32,13 +40,25 @@ public class CrowdMember : MonoBehaviour
     private void MoveToBandMember()
     {
         var step = CalcMoveSpeed();
-
         transform.position = Vector3.MoveTowards(transform.position, BandMemberTarget.transform.position, step);
+
+        AdjustStageScale();
     }
 
     private float CalcMoveSpeed()
     {
         return MoveSpeed * Time.deltaTime;
+    }
+
+    private void AdjustStageScale()
+    {
+        float stageFinalScale = FanManager.Get().GetStagePerspectiveScaleDown();
+        float curScaleSqrMag = (this.transform.position - BandMemberTarget.transform.position).sqrMagnitude;
+        //float curScaleSqrMag = (this.transform.position - BandMemberTarget.transform.position).magnitude;
+        float scale = 1f - (curScaleSqrMag / _initialScaleDistSqrMag);
+        //float scale = (1f - curScaleSqrMag) / _initialScaleDistSqrMag;
+        Vector3 newScale = Mathf.Lerp(1f, stageFinalScale, scale) * Vector3.one;
+        this.transform.localScale = newScale;
     }
 
     private void UpdateTrackMute(AudioManager.Music track)

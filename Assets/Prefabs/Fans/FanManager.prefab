@@ -53,3 +53,4 @@ MonoBehaviour:
   - {x: 4.06, y: -9.8, z: 0}
   - {x: 14.2, y: -7.23, z: 0}
   ATTACK_RANGE: 1
+  STAGE_PERSPECTIVE_SCALE_DOWN: 0.6

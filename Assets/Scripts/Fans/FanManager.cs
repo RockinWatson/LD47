@@ -14,6 +14,9 @@ public class FanManager : MonoBehaviour
     [SerializeField] private float ATTACK_RANGE = 3f;
     public float GetAttackRange() { return ATTACK_RANGE; }
 
+    [SerializeField] private float STAGE_PERSPECTIVE_SCALE_DOWN = .3f;
+    public float GetStagePerspectiveScaleDown() { return STAGE_PERSPECTIVE_SCALE_DOWN; }
+
     static private FanManager _instance = null;
     static public FanManager Get() { return _instance; }
 
