@@ -65,3 +65,48 @@ TagManager:
   - name: FRONT
     uniqueID: 858085755
     locked: 0
+  - name: New Layer
+    uniqueID: 796773891
+    locked: 0
+  - name: New Layer
+    uniqueID: 2883988351
+    locked: 0
+  - name: s1
+    uniqueID: 660156169
+    locked: 0
+  - name: s2
+    uniqueID: 1854722943
+    locked: 0
+  - name: s3
+    uniqueID: 3663014777
+    locked: 0
+  - name: s4
+    uniqueID: 574169303
+    locked: 0
+  - name: s5
+    uniqueID: 4208639967
+    locked: 0
+  - name: s6
+    uniqueID: 1815972763
+    locked: 0
+  - name: s7
+    uniqueID: 1338932095
+    locked: 0
+  - name: s8
+    uniqueID: 3417223593
+    locked: 0
+  - name: s9
+    uniqueID: 1660874819
+    locked: 0
+  - name: s10
+    uniqueID: 563404163
+    locked: 0
+  - name: s11
+    uniqueID: 2594676603
+    locked: 0
+  - name: CONTROLS
+    uniqueID: 1929213355
+    locked: 0
+  - name: ControlsFront
+    uniqueID: 4245636437
+    locked: 0

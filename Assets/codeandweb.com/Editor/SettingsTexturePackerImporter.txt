@@ -19,6 +19,7 @@ tpsheetFileNames:
 - Assets/Art/Animations/PopeON.tpsheet
 - Assets/Art/Animations/Sign.tpsheet
 - Assets/Art/Animations/Spacebar.tpsheet
+- Assets/Art/Animations/story.tpsheet
 - Assets/Art/Animations/UFO.tpsheet
 - Assets/Art/Animations/UFO2.tpsheet
 - Assets/Art/Animations/Venue.tpsheet
@@ -42,6 +43,7 @@ textureFileNames:
 - Assets/Art/Animations/PopeON.png
 - Assets/Art/Animations/Sign.png
 - Assets/Art/Animations/Spacebar.png
+- Assets/Art/Animations/story.png
 - Assets/Art/Animations/UFO.png
 - Assets/Art/Animations/UFO2.png
 - Assets/Art/Animations/Venue.png
@@ -63,6 +65,7 @@ normalmapFileNames:
 - 
 - Assets/Art/Animations/PopeOff_n.png
 - Assets/Art/Animations/PopeON_n.png
+- 
 - 
 - 
 - Assets/Art/Animations/UFO_n.png
