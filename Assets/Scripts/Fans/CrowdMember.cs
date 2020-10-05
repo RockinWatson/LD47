@@ -3,17 +3,14 @@ using UnityEngine;
 
 public class CrowdMember : MonoBehaviour
 {
+    public BandMember BandMemberTarget { get; set; }
+
     public float MoveSpeed;
-
-    private Vector3 _bandPosition;
-
-    private void Start()
-    {
-        _bandPosition = GetRandomBandMemberObject();
-    }
 
     public void Update()
     {
+        //@TODO: Do some check to see if we're in range and if so, stop moving and stun band member
+
         MoveToBandMember();
     }
 
@@ -21,18 +18,12 @@ public class CrowdMember : MonoBehaviour
     {
         var step = CalcMoveSpeed();
 
-        transform.position = Vector3.MoveTowards(transform.position, _bandPosition, step);
+        transform.position = Vector3.MoveTowards(transform.position, BandMemberTarget.transform.position, step);
     }
 
     private float CalcMoveSpeed()
     {
         return MoveSpeed * Time.deltaTime;
-    }
-
-    private Vector3 GetRandomBandMemberObject()
-    {
-        BandMember bandMember = BandManager.Get().GetRandomBandMember();
-        return bandMember.transform.position;
     }
 
     private void UpdateTrackMute(AudioManager.Music track)
