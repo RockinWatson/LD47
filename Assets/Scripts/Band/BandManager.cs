@@ -9,6 +9,8 @@ public class BandManager : MonoBehaviour
     [SerializeField] private BandMember[] _bandMembers = new BandMember[4];
     [SerializeField] private BandMemberType[] _memberPriority = new BandMemberType[4]; //@TODO: Priority of members - drums, bass, chords, melody
 
+    [SerializeField] private GameObject _explosionPrefab = null;
+
     static private BandManager _instance = null;
     static public BandManager Get() { return _instance; }
 
@@ -151,8 +153,17 @@ public class BandManager : MonoBehaviour
                 }
             }
 
+            CreateExplosionAtPos(fan.transform.position);
+            Vector3 force2 = (fan.transform.position - targetBandMember.transform.position).normalized * 500f;
+            fan.ApplyDeathForce(targetBandMember.transform.position, force2);
+
             return targetBandMember;
         }
         return null;
+    }
+
+    private void CreateExplosionAtPos(Vector3 pos)
+    {
+        Instantiate(_explosionPrefab, pos, Quaternion.identity, this.transform);
     }
 }

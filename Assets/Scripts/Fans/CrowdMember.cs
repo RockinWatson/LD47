@@ -176,12 +176,15 @@ public class CrowdMember : MonoBehaviour
 
     public void ApplyDeathForce(Vector3 source, Vector3 force)
     {
-        _rigidbody.AddForce(force, ForceMode2D.Impulse);
-        //_rigidbody.AddForceAtPosition(force, source, ForceMode2D.Impulse);
+        if (_isAlive)
+        {
+            _rigidbody.AddForce(force, ForceMode2D.Impulse);
+            //_rigidbody.AddForceAtPosition(force, source, ForceMode2D.Impulse);
 
-        _isAlive = false;
+            _isAlive = false;
 
-        _deathTimer = _deathTime;
+            _deathTimer = _deathTime;
+        }
     }
 
     private void UpdateDeath()
