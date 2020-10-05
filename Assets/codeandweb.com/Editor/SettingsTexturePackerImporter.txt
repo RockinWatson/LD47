@@ -14,6 +14,7 @@ tpsheetFileNames:
 - Assets/Art/Animations/PopeOff.tpsheet
 - Assets/Art/Animations/PopeON.tpsheet
 - Assets/Art/Animations/UFO.tpsheet
+- Assets/Art/Animations/UFO2.tpsheet
 - Assets/codeandweb.com/Example/SpriteSheet/sprites.tpsheet
 textureFileNames:
 - Assets/Art/Animations/CactusANDspeaker.png
@@ -29,6 +30,7 @@ textureFileNames:
 - Assets/Art/Animations/PopeOff.png
 - Assets/Art/Animations/PopeON.png
 - Assets/Art/Animations/UFO.png
+- Assets/Art/Animations/UFO2.png
 - Assets/codeandweb.com/Example/SpriteSheet/sprites.png
 normalmapFileNames:
 - Assets/Art/Animations/CactusANDspeaker_n.png
@@ -44,5 +46,6 @@ normalmapFileNames:
 - Assets/Art/Animations/PopeOff_n.png
 - Assets/Art/Animations/PopeON_n.png
 - Assets/Art/Animations/UFO_n.png
+- Assets/Art/Animations/UFO2_n.png
 - Assets/codeandweb.com/Example/SpriteSheet/sprites_n.png
 enableDebugOutput: 0
