@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class SequenceManager : MonoBehaviour
 {
-    [SerializeField] private List<Sequence> _allSequences;
+    [SerializeField] private List<Sequence> _allSequences = null;
 
     [SerializeField] private GameObject[] ARROWS_PREFABS = new GameObject[4];
     [SerializeField] private Vector3[] ARROWS_POS = new Vector3[4];

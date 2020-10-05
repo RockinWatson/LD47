@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using Assets.Scripts;
 
 public class BandManager : MonoBehaviour
@@ -10,6 +11,9 @@ public class BandManager : MonoBehaviour
     [SerializeField] private BandMemberType[] _memberPriority = new BandMemberType[4]; //@TODO: Priority of members - drums, bass, chords, melody
 
     [SerializeField] private GameObject _explosionPrefab = null;
+
+    [SerializeField] private float _fullBandAliveGracePeriod = 30f;
+    private float _fullBandAliveGraceTimer;
 
     static private BandManager _instance = null;
     static public BandManager Get() { return _instance; }
@@ -32,12 +36,16 @@ public class BandManager : MonoBehaviour
         }
 
         _instance = this;
+
+        _fullBandAliveGraceTimer = _fullBandAliveGracePeriod;
     }
 
     private void Update()
     {
+        CheckFullBandAliveRestartCounter();
+
 #if UNITY_EDITOR
-        if(Input.GetKeyDown(KeyCode.O))
+        if (Input.GetKeyDown(KeyCode.O))
         {
             AttackRandomAttackingFan();
         }
@@ -140,6 +148,18 @@ public class BandManager : MonoBehaviour
         return null;
     }
 
+    private bool IsAnyPlayerNotPlaying()
+    {
+        foreach(var member in _bandMembers)
+        {
+            if(member.IsNotPlaying())
+            {
+                return true;
+            }
+        }
+        return false;
+    }
+
     private BandMember AttackRandomAttackingFan()
     {
         var fan = FanManager.Get().GetRandomAttackingAndAliveFan();
@@ -170,5 +190,21 @@ public class BandManager : MonoBehaviour
     private void CreateExplosionAtPos(Vector3 pos)
     {
         Instantiate(_explosionPrefab, pos, Quaternion.identity, this.transform);
+    }
+
+    private void CheckFullBandAliveRestartCounter()
+    {
+        if(IsAnyPlayerNotPlaying())
+        {
+            _fullBandAliveGraceTimer -= Time.deltaTime;
+            if(_fullBandAliveGraceTimer <= 0f)
+            {
+                SceneManager.LoadScene("GameOverLoop");
+            }
+        }
+        else
+        {
+            _fullBandAliveGraceTimer = _fullBandAliveGracePeriod;
+        }
     }
 }

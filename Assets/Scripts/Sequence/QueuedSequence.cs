@@ -59,7 +59,7 @@ public class QueuedSequence
     {
         if (!HasAnyNotHitNotes())
         {
-            Debug.Log("No more Not Hit Notes!");
+            //Debug.Log("No more Not Hit Notes!");
 
             //@TODO: Process which tier we achieved and then notify BandManager.
             for (int i = (int)SequenceNote.HitScore.COUNT - 1; i >= (int)SequenceNote.HitScore.MISSED; --i)
