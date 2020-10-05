@@ -8,6 +8,9 @@ namespace Assets.Scripts
     {
         public Sound[] Sounds;
 
+        private const float INACTIVE_MASTER_VOLUME_OVERRIDE = -1;
+        [SerializeField] private float _masterVolumeOverride = INACTIVE_MASTER_VOLUME_OVERRIDE;
+
         public enum Music { 
             FullBand,
             Bass,
@@ -19,17 +22,45 @@ namespace Assets.Scripts
 
         private void Awake()
         {
+            SetupSounds();
+        }
+
+        private void Start()
+        {
+            PlayAllSoundsExceptFullBand();
+        }
+
+        private void SetupSounds()
+        {
             //Create each Sound Object in Audio Manager.
             foreach (Sound s in Sounds)
             {
                 s.Source = gameObject.AddComponent<AudioSource>();
                 s.Source.clip = s.Clip;
-                s.Source.volume = s.Volume;
+                s.Source.volume = GetSoundVolume(s);
                 s.Source.loop = s.Loop;
             }
         }
 
-        private void Start()
+        private float GetSoundVolume(Sound sound)
+        {
+            if(_masterVolumeOverride == INACTIVE_MASTER_VOLUME_OVERRIDE)
+            {
+                return sound.Volume;
+            }
+            return _masterVolumeOverride;
+        }
+
+        private float GetMasterVolumeMax()
+        {
+            if (_masterVolumeOverride == INACTIVE_MASTER_VOLUME_OVERRIDE)
+            {
+                return 1f;
+            }
+            return _masterVolumeOverride;
+        }
+
+        private void PlayAllSoundsExceptFullBand()
         {
             foreach (Music music in Enum.GetValues(typeof(Music)))
             {
@@ -64,7 +95,7 @@ namespace Assets.Scripts
 
         public void UnMute(Music soundName)
         {
-            GetSound(soundName).Source.volume = 1f;
+            GetSound(soundName).Source.volume = GetMasterVolumeMax();
         }
 
         public float GetVolume(Music soundName)
