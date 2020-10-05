@@ -6,6 +6,8 @@ public class CrowdMember : MonoBehaviour
     [SerializeField] private Rigidbody2D _rigidbody = null;
     public Rigidbody2D GetRigidbody() { return _rigidbody; }
 
+    [SerializeField] private SpriteRenderer _spriteRenderer = null;
+
     [SerializeField] private float _deathTime = 1f;
     private float _deathTimer = 0f;
 
@@ -189,6 +191,11 @@ public class CrowdMember : MonoBehaviour
 
     private void UpdateDeath()
     {
+        // Alpha out the body over time
+        var color = _spriteRenderer.color;
+        color.a = _deathTimer / _deathTime;
+        _spriteRenderer.color = color;
+
         _deathTimer -= Time.deltaTime;
         if(_deathTimer <= 0f)
         {

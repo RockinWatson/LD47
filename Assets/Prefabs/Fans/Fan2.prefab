@@ -48,6 +48,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _rigidbody: {fileID: 4216679861723298140}
+  _spriteRenderer: {fileID: 3226615336876212121}
   _deathTime: 5
   MoveSpeed: 1
 --- !u!61 &3728632845461767235
