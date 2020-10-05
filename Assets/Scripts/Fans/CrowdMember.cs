@@ -3,6 +3,12 @@ using UnityEngine;
 
 public class CrowdMember : MonoBehaviour
 {
+    [SerializeField] private Rigidbody2D _rigidbody = null;
+    public Rigidbody2D GetRigidbody() { return _rigidbody; }
+
+    [SerializeField] private float _deathTime = 1f;
+    private float _deathTimer = 0f;
+
     public BandMember BandMemberTarget { get; set; }
 
     public float MoveSpeed;
@@ -10,24 +16,39 @@ public class CrowdMember : MonoBehaviour
     private float _initialScaleDistSqrMag;
 
     private bool _hasAttacked = false;
+    private bool _isAlive = true;
 
-    public void Start()
+    private void Start()
     {
+        FanManager.Get().AddFan(this);
+
         _initialScaleDistSqrMag = (BandMemberTarget.transform.position - this.transform.position).sqrMagnitude;
         //_initialScaleDistSqrMag = (BandMemberTarget.transform.position - this.transform.position).magnitude;
     }
 
-    public void Update()
+    private void OnDestroy()
     {
-        //@TODO: Do some check to see if we're in range and if so, stop moving and stun band member
-        if (!IsInRangeOfTarget())
+        FanManager.Get().RemoveFan(this);
+    }
+
+    private void Update()
+    {
+        if (_isAlive)
         {
-            MoveToBandMember();
+            //@TODO: Do some check to see if we're in range and if so, stop moving and stun band member
+            if (!IsInRangeOfTarget())
+            {
+                MoveToBandMember();
+            }
+            else if (!_hasAttacked)
+            {
+                //@TODO: Initiate attack.
+                AttackTarget();
+            }
         }
-        else if(!_hasAttacked)
+        else
         {
-            //@TODO: Initiate attack.
-            AttackTarget();
+            UpdateDeath();
         }
     }
 
@@ -70,6 +91,16 @@ public class CrowdMember : MonoBehaviour
     private void UpdateTrackUnMute(AudioManager.Music track)
     {
         PlayerController.Get().UpdateCanTurnOnTrack(track, true);
+    }
+
+    public bool IsAlive()
+    {
+        return _isAlive;
+    }
+
+    public bool IsAttackingAndAlive()
+    {
+        return _hasAttacked && _isAlive;
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -141,5 +172,24 @@ public class CrowdMember : MonoBehaviour
         BandMemberTarget.Stun();
 
         _hasAttacked = true;
+    }
+
+    public void ApplyDeathForce(Vector3 source, Vector3 force)
+    {
+        _rigidbody.AddForce(force, ForceMode2D.Impulse);
+        //_rigidbody.AddForceAtPosition(force, source, ForceMode2D.Impulse);
+
+        _isAlive = false;
+
+        _deathTimer = _deathTime;
+    }
+
+    private void UpdateDeath()
+    {
+        _deathTimer -= Time.deltaTime;
+        if(_deathTimer <= 0f)
+        {
+            Destroy(this.gameObject);
+        }
     }
 }

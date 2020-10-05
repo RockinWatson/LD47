@@ -32,6 +32,16 @@ public class BandManager : MonoBehaviour
         _instance = this;
     }
 
+    private void Update()
+    {
+#if UNITY_EDITOR
+        if(Input.GetKeyDown(KeyCode.O))
+        {
+            AttackRandomAttackingFan();
+        }
+#endif
+    }
+
     static public AudioManager.Music GetMusicByMemberType(BandMemberType memberType)
     {
         switch(memberType)
@@ -66,14 +76,42 @@ public class BandManager : MonoBehaviour
         switch(hitScore)
         {
             case SequenceNote.HitScore.EXCELLENT:
-                //@TODO: Try to handle Excellent, then have it fall through... Might need to recurse down the line?
+                {
+                    //@TODO: Try to handle Excellent, then have it fall through... Might need to recurse down the line?
+                    var bandMember = AttackRandomAttackingFan();
+                    if (bandMember != null)
+                    {
+                        //@TODO: Boost this to next tier or something?
+                        bandMember.SetPlaying();
+                    }
+                    else
+                    {
+                        //@TODO: Boost this to next tier or something?
+                        StartRandomMemberPlaying();
+                    }
+                }
+                break;
             case SequenceNote.HitScore.GOOD:
+                {
+                    var bandMember = AttackRandomAttackingFan();
+                    if(bandMember != null)
+                    {
+                        bandMember.SetPlaying();
+                    }
+                    else
+                    {
+                        StartRandomMemberPlaying();
+                    }
+                }
+                break;
             case SequenceNote.HitScore.OKAY:
                 StartRandomMemberPlaying();
                 break;
             case SequenceNote.HitScore.BAD:
+                //@TODO: Reduce tier?
                 break;
             case SequenceNote.HitScore.MISSED:
+                //@TODO: Stun random?
                 break;
             case SequenceNote.HitScore.NOT_HIT:
                 Debug.LogWarning("This shouldn't happen - shouldn't get NOT HIT at this point.");
@@ -93,5 +131,28 @@ public class BandManager : MonoBehaviour
     private BandMember GetRandomMemberNotPlaying()
     {
         return _bandMembers.Where((a) => a.IsNotPlaying()).FirstOrDefault();
+    }
+
+    private BandMember AttackRandomAttackingFan()
+    {
+        var fan = FanManager.Get().GetRandomAttackingAndAliveFan();
+        if(fan != null)
+        {
+            BandMember targetBandMember = fan.BandMemberTarget;
+
+            var fans = FanManager.Get().GetAllNearbyAliveEnemiesAroundPos(fan.transform.position, 4f);
+            if(fans != null && fans.Count > 0)
+            {
+                //@TODO: Add impulse to all these fuckers from nearest band member position.
+                foreach(var targetFan in fans)
+                {
+                    Vector3 force = (targetFan.transform.position - targetBandMember.transform.position).normalized * 500f;
+                    targetFan.ApplyDeathForce(targetBandMember.transform.position, force);
+                }
+            }
+
+            return targetBandMember;
+        }
+        return null;
     }
 }

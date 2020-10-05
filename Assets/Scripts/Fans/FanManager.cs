@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 public class FanManager : MonoBehaviour
@@ -7,9 +8,21 @@ public class FanManager : MonoBehaviour
     [SerializeField] private GameObject[] FANS_PREFABS = null;
     [SerializeField] private Vector3[] FANS_POS = null;
 
-    private const float INITIAL_SPAWN_COOLDOWN = 20f;
-    private float _spawnCooldown = INITIAL_SPAWN_COOLDOWN;
-    private const float NORMAL_SPAWN_COOLDOWN = 10f;
+    private Random random = new Random();
+
+    private List<CrowdMember> _allFans = new List<CrowdMember>();
+    public void AddFan(CrowdMember fan)
+    {
+        _allFans.Add(fan);
+    }
+    public void RemoveFan(CrowdMember fan)
+    {
+        _allFans.Remove(fan);
+    }
+
+    [SerializeField] private float INITIAL_SPAWN_COOLDOWN = 20f;
+    private float _spawnCooldown = 0f;
+    [SerializeField] private float NORMAL_SPAWN_COOLDOWN = 10f;
 
     [SerializeField] private float ATTACK_RANGE = 3f;
     public float GetAttackRange() { return ATTACK_RANGE; }
@@ -29,6 +42,8 @@ public class FanManager : MonoBehaviour
         }
 
         _instance = this;
+
+        _spawnCooldown = INITIAL_SPAWN_COOLDOWN;
     }
 
     private void Update()
@@ -48,5 +63,30 @@ public class FanManager : MonoBehaviour
         var fanGO = Instantiate(FANS_PREFABS[Random.Range(0, FANS_PREFABS.Length)], FANS_POS[Random.Range(0, FANS_POS.Length)], Quaternion.identity, this.transform);
         CrowdMember crowdMember = fanGO.GetComponent<CrowdMember>();
         crowdMember.BandMemberTarget = BandManager.Get().GetRandomBandMember();
+    }
+
+    public List<CrowdMember> GetAllNearbyAliveEnemiesAroundPos(Vector3 pos, float radius)
+    {
+        var nearbyFans = new List<CrowdMember>();
+
+        foreach(var fan in _allFans)
+        {
+            if(fan.IsAlive() && (pos - this.transform.position).sqrMagnitude <= radius*radius)
+            {
+                nearbyFans.Add(fan);
+            }
+        }
+
+        return nearbyFans;
+    }
+
+    public CrowdMember GetRandomAttackingAndAliveFan()
+    {
+        var fans = _allFans.Where((a) => a.IsAttackingAndAlive()).ToArray();
+        if(fans != null && fans.Length > 0)
+        {
+            return fans[Random.Range(0, fans.Length)];
+        }
+        return null;
     }
 }

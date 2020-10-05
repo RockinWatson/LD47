@@ -52,5 +52,7 @@ MonoBehaviour:
   - {x: -5.7, y: -9.8, z: 0}
   - {x: 4.06, y: -9.8, z: 0}
   - {x: 14.2, y: -7.23, z: 0}
-  ATTACK_RANGE: 1
+  INITIAL_SPAWN_COOLDOWN: 15
+  NORMAL_SPAWN_COOLDOWN: 10
+  ATTACK_RANGE: 2.5
   STAGE_PERSPECTIVE_SCALE_DOWN: 0.6

@@ -58,11 +58,13 @@ public class SequenceManager : MonoBehaviour
             _sequenceTimer -= Time.deltaTime;
         }
 
+#if UNITY_EDITOR
         //@TEMP: For now, just do it based on key stroke
         if(Input.GetKeyDown(KeyCode.P))
         {
             QueueRandomSequence();
         }
+#endif
 
         //@TODO: Maybe also track input for arrows etc and accuracy?
     }
