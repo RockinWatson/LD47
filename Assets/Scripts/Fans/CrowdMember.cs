@@ -192,9 +192,9 @@ public class CrowdMember : MonoBehaviour
     private void UpdateDeath()
     {
         // Alpha out the body over time
-        var color = _spriteRenderer.color;
+        var color = _spriteRenderer.material.color;
         color.a = _deathTimer / _deathTime;
-        _spriteRenderer.color = color;
+        _spriteRenderer.material.color = color;
 
         _deathTimer -= Time.deltaTime;
         if(_deathTimer <= 0f)
