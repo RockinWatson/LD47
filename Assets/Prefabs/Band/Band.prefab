@@ -55,6 +55,7 @@ MonoBehaviour:
   _memberPriority: 00000000030000000200000001000000
   _explosionPrefab: {fileID: 7742152499077020565, guid: 271bbaa4a08cf1e419d2040a60aa11b0,
     type: 3}
+  _fullBandAliveGracePeriod: 20
 --- !u!1001 &4676878381940697524
 PrefabInstance:
   m_ObjectHideFlags: 0
