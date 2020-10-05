@@ -110,3 +110,6 @@ TagManager:
   - name: ControlsFront
     uniqueID: 4245636437
     locked: 0
+  - name: Sequence
+    uniqueID: 3532477899
+    locked: 0
