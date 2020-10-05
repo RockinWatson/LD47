@@ -4,7 +4,6 @@ using UnityEngine;
 public class CrowdMember : MonoBehaviour
 {
     public float MoveSpeed;
-    public GameObject[] BandMembers;
 
     private Vector3 _bandPosition;
 
@@ -32,8 +31,8 @@ public class CrowdMember : MonoBehaviour
 
     private Vector3 GetRandomBandMemberObject()
     {
-        var gameObject = BandMembers[Random.Range(0,BandMembers.Length)];
-        return gameObject.transform.position;
+        BandMember bandMember = BandManager.Get().GetRandomBandMember();
+        return bandMember.transform.position;
     }
 
     private void UpdateTrackMute(AudioManager.Music track)
@@ -44,11 +43,13 @@ public class CrowdMember : MonoBehaviour
 
     private void UpdateTrackUnMute(AudioManager.Music track)
     {
-        FindObjectOfType<PlayerController>().UpdateCanTurnOnTrack(track, true);
+        PlayerController.Get().UpdateCanTurnOnTrack(track, true);
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        return;
+
         var instrument = collision.gameObject.GetComponent<BandProperties>().Instrument[0];
 
         //Bass Collision
@@ -79,6 +80,8 @@ public class CrowdMember : MonoBehaviour
 
     private void OnTriggerExit2D(Collider2D collision)
     {
+        return;
+
         var instrument = collision.gameObject.GetComponent<BandProperties>().Instrument[0];
 
         //Bass Collision

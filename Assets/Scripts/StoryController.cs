@@ -156,7 +156,7 @@ public class StoryController : MonoBehaviour
         startGame.Play();
         _storyEnd = false;
         _continue = true;
-        yield return new WaitForSeconds(0);
+        yield return new WaitForSeconds(3);
         SceneManager.LoadScene("TestScenerooni");
     }
 
