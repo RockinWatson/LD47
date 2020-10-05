@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 using Assets.Scripts;
 
@@ -18,13 +19,6 @@ public class BandManager : MonoBehaviour
         GATOR = 2,
         CHICK = 3,
         COUNT,
-    }
-
-    public enum BandMemberStatus
-    {
-        NOT_PLAYING = 0,
-        STUNNED = 1,
-        PLAYING = 2,
     }
 
     private void Awake()
@@ -64,5 +58,40 @@ public class BandManager : MonoBehaviour
     public BandMember GetRandomBandMember()
     {
         return _bandMembers[Random.Range(0, (int)BandMemberType.COUNT)];
+    }
+
+    public void SequenceCompleted(SequenceNote.HitScore hitScore)
+    {
+        //@TODO: React appropriately to the level of sequence completed.
+        switch(hitScore)
+        {
+            case SequenceNote.HitScore.EXCELLENT:
+                //@TODO: Try to handle Excellent, then have it fall through... Might need to recurse down the line?
+            case SequenceNote.HitScore.GOOD:
+            case SequenceNote.HitScore.OKAY:
+                StartRandomMemberPlaying();
+                break;
+            case SequenceNote.HitScore.BAD:
+                break;
+            case SequenceNote.HitScore.MISSED:
+                break;
+            case SequenceNote.HitScore.NOT_HIT:
+                Debug.LogWarning("This shouldn't happen - shouldn't get NOT HIT at this point.");
+                break;
+        }
+    }
+
+    private void StartRandomMemberPlaying()
+    {
+        var member = GetRandomMemberNotPlaying();
+        if(member != null)
+        {
+            member.SetPlaying();
+        }
+    }
+
+    private BandMember GetRandomMemberNotPlaying()
+    {
+        return _bandMembers.Where((a) => a.IsNotPlaying()).FirstOrDefault();
     }
 }

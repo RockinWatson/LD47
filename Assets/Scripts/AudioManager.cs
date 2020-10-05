@@ -11,6 +11,9 @@ namespace Assets.Scripts
         private const float INACTIVE_MASTER_VOLUME_OVERRIDE = -1;
         [SerializeField] private float _masterVolumeOverride = INACTIVE_MASTER_VOLUME_OVERRIDE;
 
+        static private AudioManager _instance = null;
+        static public AudioManager Get() { return _instance; }
+
         public enum Music { 
             FullBand,
             Bass,
@@ -22,6 +25,14 @@ namespace Assets.Scripts
 
         private void Awake()
         {
+            if (_instance != null)
+            {
+                Debug.LogError("Something fucky happened - should only be 1 AudioManager");
+                return;
+            }
+
+            _instance = this;
+
             SetupSounds();
         }
 
@@ -37,7 +48,7 @@ namespace Assets.Scripts
             {
                 s.Source = gameObject.AddComponent<AudioSource>();
                 s.Source.clip = s.Clip;
-                s.Source.volume = GetSoundVolume(s);
+                s.Source.volume = 0f; // GetSoundVolume(s);
                 s.Source.loop = s.Loop;
             }
         }

@@ -28,7 +28,7 @@ public class QueuedSequence
 
     public bool IsMostlyGivenHitScoreOrBetter(SequenceNote.HitScore hitScore)
     {
-        int majorityCount = _notes.Count / 2 + 1;
+        int majorityCount = _notes.Count / 2;
         int activeCount = 0;
         foreach(var note in _notes)
         {
@@ -53,5 +53,25 @@ public class QueuedSequence
             }
         }
         return false;
+    }
+
+    public void NotifyNoteHit(SequenceNote note)
+    {
+        if (!HasAnyNotHitNotes())
+        {
+            Debug.Log("No more Not Hit Notes!");
+
+            //@TODO: Process which tier we achieved and then notify BandManager.
+            for (int i = (int)SequenceNote.HitScore.COUNT - 1; i >= (int)SequenceNote.HitScore.MISSED; --i)
+            {
+                SequenceNote.HitScore hitScore = (SequenceNote.HitScore)i;
+                if (IsMostlyGivenHitScoreOrBetter(hitScore))
+                {
+                    BandManager.Get().SequenceCompleted(hitScore);
+                    break;
+                }
+            }
+            BandManager.Get().SequenceCompleted(SequenceNote.HitScore.MISSED);
+        }
     }
 }

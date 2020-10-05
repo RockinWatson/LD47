@@ -15,6 +15,7 @@ public class SequenceNote : MonoBehaviour
         OKAY = 2,
         GOOD = 3,
         EXCELLENT = 4,
+        COUNT,
     }
     private HitScore _hitScore = HitScore.NOT_HIT;
     public HitScore GetHitScore() { return _hitScore; }
@@ -22,6 +23,8 @@ public class SequenceNote : MonoBehaviour
     public int SequenceID { get; set; }
 
     private bool _wasActivateable = false;
+    private bool _wasHit = false;
+    private bool _wasMissed = false;
 
     private void Update()
     {
@@ -31,9 +34,11 @@ public class SequenceNote : MonoBehaviour
             _wasActivateable = true;
             CheckInput();
         }
-        else if(_wasActivateable)
+        else if(_wasActivateable && !_wasHit && !_wasMissed)
         {
             _hitScore = HitScore.MISSED;
+            _wasMissed = true;
+            NotifyNoteHit();
         }
 
         //@TODO: Move the note along...
@@ -99,28 +104,36 @@ public class SequenceNote : MonoBehaviour
         float deltaX = GetDeltaXFromTarget();
         if(deltaX <= targetRanges[(int)SequenceManager.TargetScore.EXCELLENT])
         {
-            Debug.Log("EXCELLENT!");
+            //Debug.Log("EXCELLENT!");
             _hitScore = HitScore.EXCELLENT;
             _sprite.color = Color.blue;
         }
         else if (deltaX <= targetRanges[(int)SequenceManager.TargetScore.GOOD])
         {
-            Debug.Log("GOOD!");
+            //Debug.Log("GOOD!");
             _hitScore = HitScore.GOOD;
             _sprite.color = Color.green;
         }
         else if (deltaX <= targetRanges[(int)SequenceManager.TargetScore.OKAY])
         {
-            Debug.Log("OKAY!");
+            //Debug.Log("OKAY!");
             _hitScore = HitScore.OKAY;
             _sprite.color = Color.yellow;
         }
         else if (deltaX <= targetRanges[(int)SequenceManager.TargetScore.BAD])
         {
-            Debug.Log("BAD!");
+            //Debug.Log("BAD!");
             _hitScore = HitScore.BAD;
             _sprite.color = Color.red;
         }
+        else
+        {
+            //Debug.Log("MISSED!");
+            _hitScore = HitScore.MISSED;
+            _sprite.color = Color.magenta;
+        }
+
+        NotifyNoteHit();
     }
 
     private void MoveUpdate()
@@ -139,5 +152,14 @@ public class SequenceNote : MonoBehaviour
         }
 
         Destroy(this.gameObject);
+    }
+
+    private void NotifyNoteHit()
+    {
+        Debug.Log("Notify Note Hit");
+
+        _wasHit = true;
+
+        SequenceManager.Get().QueuedSequences()[SequenceID].NotifyNoteHit(this);
     }
 }
