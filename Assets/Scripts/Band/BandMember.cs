@@ -18,18 +18,24 @@ public class BandMember : MonoBehaviour
     public BandMemberStatus GetStatus() { return _status; }
 
     [SerializeField] private Animator _animator = null;
+    [SerializeField] private RuntimeAnimatorController _playAnim = null;
+    [SerializeField] private RuntimeAnimatorController _idleAnim = null;
 
     private void Update()
     {
         if(IsNotPlaying())
         {
+            _animator.runtimeAnimatorController = _idleAnim;
+
             //@TODO: Pause anim.
-            _animator.speed = 0f;
+            //_animator.speed = 0f;
         }
         else
         {
+            _animator.runtimeAnimatorController = _playAnim;
+
             //@TODO: Play anim.
-            _animator.speed = 1f;
+            //_animator.speed = 1f;
         }
     }
 
