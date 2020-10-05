@@ -45,4 +45,12 @@ public class BandMember : MonoBehaviour
         AudioManager.Music music = BandManager.GetMusicByMemberType(_memberType);
         AudioManager.Get().UnMute(music);
     }
+
+    public void Stun()
+    {
+        _status = BandMemberStatus.STUNNED;
+
+        AudioManager.Music music = BandManager.GetMusicByMemberType(_memberType);
+        AudioManager.Get().Mute(music);
+    }
 }

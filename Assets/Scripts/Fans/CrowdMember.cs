@@ -7,11 +7,26 @@ public class CrowdMember : MonoBehaviour
 
     public float MoveSpeed;
 
+    private bool _hasAttacked = false;
+
     public void Update()
     {
         //@TODO: Do some check to see if we're in range and if so, stop moving and stun band member
+        if (!IsInRangeOfTarget())
+        {
+            MoveToBandMember();
+        }
+        else if(!_hasAttacked)
+        {
+            //@TODO: Initiate attack.
+            AttackTarget();
+        }
+    }
 
-        MoveToBandMember();
+    private bool IsInRangeOfTarget()
+    {
+        float attackRange = FanManager.Get().GetAttackRange();
+        return (this.transform.position - BandMemberTarget.transform.position).sqrMagnitude <= attackRange * attackRange;
     }
 
     private void MoveToBandMember()
@@ -99,5 +114,12 @@ public class CrowdMember : MonoBehaviour
             UpdateTrackUnMute(AudioManager.Music.Lead);
             UpdateTrackUnMute(AudioManager.Music.Melody);
         }
+    }
+
+    private void AttackTarget()
+    {
+        BandMemberTarget.Stun();
+
+        _hasAttacked = true;
     }
 }

@@ -58,7 +58,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0.018484116, y: -0.12939072}
@@ -131,8 +131,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 1862803341
-  m_SortingLayer: 5
+  m_SortingLayerID: 1728981163
+  m_SortingLayer: 6
   m_SortingOrder: 0
   m_Sprite: {fileID: 4474128066926549765, guid: a092aca4679f3a24da1124a75df02738,
     type: 3}

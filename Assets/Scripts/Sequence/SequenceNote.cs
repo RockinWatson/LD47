@@ -156,7 +156,7 @@ public class SequenceNote : MonoBehaviour
 
     private void NotifyNoteHit()
     {
-        Debug.Log("Notify Note Hit");
+        //Debug.Log("Notify Note Hit");
 
         _wasHit = true;
 

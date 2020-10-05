@@ -56,6 +56,9 @@ TagManager:
   - name: Band
     uniqueID: 1862803341
     locked: 0
+  - name: Fans
+    uniqueID: 1728981163
+    locked: 0
   - name: ConsoleBack
     uniqueID: 1017137579
     locked: 0

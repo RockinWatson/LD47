@@ -11,6 +11,23 @@ public class FanManager : MonoBehaviour
     private float _spawnCooldown = INITIAL_SPAWN_COOLDOWN;
     private const float NORMAL_SPAWN_COOLDOWN = 10f;
 
+    [SerializeField] private float ATTACK_RANGE = 3f;
+    public float GetAttackRange() { return ATTACK_RANGE; }
+
+    static private FanManager _instance = null;
+    static public FanManager Get() { return _instance; }
+
+    private void Awake()
+    {
+        if (_instance != null)
+        {
+            Debug.LogError("Something fucky happened - should only be 1 FanManager");
+            return;
+        }
+
+        _instance = this;
+    }
+
     private void Update()
     {
         _spawnCooldown -= Time.deltaTime;
