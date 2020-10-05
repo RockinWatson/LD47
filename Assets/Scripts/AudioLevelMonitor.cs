@@ -4,25 +4,18 @@ using UnityEngine;
 
 public class AudioLevelMonitor : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    private readonly float[] _spectrumData = new float[128];
 
     // Update is called once per frame
     void Update()
     {
+        AudioListener.GetSpectrumData(_spectrumData, 0, FFTWindow.Rectangular);
 
-        float[] spectrum = new float[128];
-
-        AudioListener.GetSpectrumData(spectrum, 0, FFTWindow.Rectangular);
-
-        for (int i = 1; i < spectrum.Length - 1; i++)
+        for (int i = 1; i < _spectrumData.Length - 1; i++)
         {
             //TODO - Code here to animate based on frequency volumes
 
-            Debug.DrawLine(new Vector3(Mathf.Log(i - 1), Mathf.Log(spectrum[i - 1]), 3), new Vector3(Mathf.Log(i), Mathf.Log(spectrum[i]), 3), Color.blue);
+            Debug.DrawLine(new Vector3(Mathf.Log(i - 1), Mathf.Log(_spectrumData[i - 1]), 3), new Vector3(Mathf.Log(i), Mathf.Log(_spectrumData[i]), 3), Color.blue);
             //Debug.Log(Mathf.Log(spectrum[i]));
         }
     }
