@@ -13,10 +13,15 @@ tpsheetFileNames:
 - Assets/Art/Animations/GoatOFF.tpsheet
 - Assets/Art/Animations/GoatON.tpsheet
 - Assets/Art/Animations/NewSpeakers.tpsheet
+- Assets/Art/Animations/planet.tpsheet
+- Assets/Art/Animations/PlanetFog.tpsheet
 - Assets/Art/Animations/PopeOff.tpsheet
 - Assets/Art/Animations/PopeON.tpsheet
+- Assets/Art/Animations/Sign.tpsheet
+- Assets/Art/Animations/Spacebar.tpsheet
 - Assets/Art/Animations/UFO.tpsheet
 - Assets/Art/Animations/UFO2.tpsheet
+- Assets/Art/Animations/Venue.tpsheet
 - Assets/codeandweb.com/Example/SpriteSheet/sprites.tpsheet
 textureFileNames:
 - Assets/Art/Animations/CactusANDspeaker.png
@@ -31,10 +36,15 @@ textureFileNames:
 - Assets/Art/Animations/GoatOFF.png
 - Assets/Art/Animations/GoatON.png
 - Assets/Art/Animations/NewSpeakers.png
+- Assets/Art/Animations/planet.png
+- Assets/Art/Animations/PlanetFog.png
 - Assets/Art/Animations/PopeOff.png
 - Assets/Art/Animations/PopeON.png
+- Assets/Art/Animations/Sign.png
+- Assets/Art/Animations/Spacebar.png
 - Assets/Art/Animations/UFO.png
 - Assets/Art/Animations/UFO2.png
+- Assets/Art/Animations/Venue.png
 - Assets/codeandweb.com/Example/SpriteSheet/sprites.png
 normalmapFileNames:
 - Assets/Art/Animations/CactusANDspeaker_n.png
@@ -49,9 +59,14 @@ normalmapFileNames:
 - Assets/Art/Animations/GoatOFF_n.png
 - Assets/Art/Animations/GoatON_n.png
 - Assets/Art/Animations/NewSpeakers_n.png
+- 
+- 
 - Assets/Art/Animations/PopeOff_n.png
 - Assets/Art/Animations/PopeON_n.png
+- 
+- 
 - Assets/Art/Animations/UFO_n.png
 - Assets/Art/Animations/UFO2_n.png
+- 
 - Assets/codeandweb.com/Example/SpriteSheet/sprites_n.png
 enableDebugOutput: 0
