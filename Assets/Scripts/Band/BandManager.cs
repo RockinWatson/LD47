@@ -132,7 +132,12 @@ public class BandManager : MonoBehaviour
 
     private BandMember GetRandomMemberNotPlaying()
     {
-        return _bandMembers.Where((a) => a.IsNotPlaying()).FirstOrDefault();
+        var members = _bandMembers.Where((a) => a.IsNotPlaying()).ToArray();
+        if(members != null && members.Length > 0)
+        {
+            return members[Random.Range(0, members.Length)];
+        }
+        return null;
     }
 
     private BandMember AttackRandomAttackingFan()
