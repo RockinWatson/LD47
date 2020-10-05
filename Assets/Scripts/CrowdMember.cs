@@ -39,7 +39,7 @@ public class CrowdMember : MonoBehaviour
     private void UpdateTrackMute(AudioManager.Music track)
     {
         FindObjectOfType<AudioManager>().Mute(track);
-        FindObjectOfType<PlayerController>().UpdateCanTurnOnTrack(AudioManager.Music.Bass, false);
+        FindObjectOfType<PlayerController>().UpdateCanTurnOnTrack(track, false);
     }
 
     private void UpdateTrackUnMute(AudioManager.Music track)
