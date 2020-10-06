@@ -44,6 +44,11 @@ public class BandMember : MonoBehaviour
         return _status == BandMemberStatus.NOT_PLAYING || _status == BandMemberStatus.STUNNED;
     }
 
+    public bool IsPlaying()
+    {
+        return !IsNotPlaying();
+    }
+
     public void SetPlaying()
     {
         _status = BandMemberStatus.PLAYING;

@@ -53,6 +53,23 @@ public class BandManager : MonoBehaviour
 #endif
     }
 
+    public bool IsAllLeftBandPlaying()
+    {
+        return _bandMembers[(int)BandMemberType.CACTUS].IsPlaying() && _bandMembers[(int)BandMemberType.GATOR].IsPlaying();
+    }
+    public bool IsOneLeftBandPlaying()
+    {
+        return _bandMembers[(int)BandMemberType.CACTUS].IsPlaying() != _bandMembers[(int)BandMemberType.GATOR].IsPlaying();
+    }
+    public bool IsAllRightBandPlaying()
+    {
+        return _bandMembers[(int)BandMemberType.CHICK].IsPlaying() && _bandMembers[(int)BandMemberType.BILLY].IsPlaying();
+    }
+    public bool IsOneRightBandPlaying()
+    {
+        return _bandMembers[(int)BandMemberType.CHICK].IsPlaying() != _bandMembers[(int)BandMemberType.BILLY].IsPlaying();
+    }
+
     static public AudioManager.Music GetMusicByMemberType(BandMemberType memberType)
     {
         switch(memberType)
