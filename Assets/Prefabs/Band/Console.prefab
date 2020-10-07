@@ -1042,10 +1042,10 @@ MonoBehaviour:
   _dialRod: {fileID: 5462464852847436696}
   _dialRodPivot: {fileID: 6467524243848115163}
   _bandMemberDials:
+  - {fileID: 5462464853522550040}
   - {fileID: 5462464853479446874}
   - {fileID: 5462464854380355076}
   - {fileID: 5462464852945914194}
-  - {fileID: 5462464853522550040}
   _bandMemberDialColorOff: {r: 0.13725491, g: 0.09019608, b: 0.09019608, a: 255}
 --- !u!1 &5462464854344281885
 GameObject:

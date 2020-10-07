@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -33,6 +34,25 @@ public class Console : MonoBehaviour
         _lightStartingIntensityMap.Add(_greenLight, _greenLight.intensity);
         _lightStartingIntensityMap.Add(_yellowLight, _yellowLight.intensity);
         _lightStartingIntensityMap.Add(_magentaLight, _magentaLight.intensity);
+
+        BandMember.OnMemberPlaying += OnBandMemberPlaying;
+        BandMember.OnMemberStunned += OnBandMemberStunned;
+    }
+
+    private void OnDestroy()
+    {
+        BandMember.OnMemberPlaying -= OnBandMemberPlaying;
+        BandMember.OnMemberStunned -= OnBandMemberStunned;
+    }
+
+    private void OnBandMemberPlaying(BandMember member)
+    {
+        _bandMemberDials[(int)member.GetMemberType()].color = Color.white;
+    }
+
+    private void OnBandMemberStunned(BandMember member)
+    {
+        _bandMemberDials[(int)member.GetMemberType()].color = _bandMemberDialColorOff;
     }
 
     public void BounceHitScoreLight(SequenceNote.HitScore hitScore)

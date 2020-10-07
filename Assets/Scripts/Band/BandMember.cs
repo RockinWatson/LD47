@@ -8,6 +8,10 @@ public class BandMember : MonoBehaviour
     [SerializeField] private BandManager.BandMemberType _memberType;
     public BandManager.BandMemberType GetMemberType() { return _memberType; }
 
+    public delegate void BandMemberEvent(BandMember member);
+    static public BandMemberEvent OnMemberPlaying;
+    static public BandMemberEvent OnMemberStunned;
+
     public enum BandMemberStatus
     {
         NOT_PLAYING = 0,
@@ -51,17 +55,27 @@ public class BandMember : MonoBehaviour
 
     public void SetPlaying()
     {
-        _status = BandMemberStatus.PLAYING;
+        if (_status != BandMemberStatus.PLAYING)
+        {
+            _status = BandMemberStatus.PLAYING;
 
-        AudioManager.Music music = BandManager.GetMusicByMemberType(_memberType);
-        AudioManager.Get().UnMute(music);
+            AudioManager.Music music = BandManager.GetMusicByMemberType(_memberType);
+            AudioManager.Get().UnMute(music);
+
+            OnMemberPlaying.Invoke(this);
+        }
     }
 
     public void Stun()
     {
-        _status = BandMemberStatus.STUNNED;
+        if (_status != BandMemberStatus.STUNNED)
+        {
+            _status = BandMemberStatus.STUNNED;
 
-        AudioManager.Music music = BandManager.GetMusicByMemberType(_memberType);
-        AudioManager.Get().Mute(music);
+            AudioManager.Music music = BandManager.GetMusicByMemberType(_memberType);
+            AudioManager.Get().Mute(music);
+
+            OnMemberStunned.Invoke(this);
+        }
     }
 }
