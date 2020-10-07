@@ -16,6 +16,13 @@ public class BandManager : MonoBehaviour
     private float _fullBandAliveGraceTimer;
     private bool _hasHadFullBandPlay = false;
 
+    private Dictionary<BandMember, BandMember.BandMemberStatus> _bandMembersLastKnownStatusForParry = new Dictionary<BandMember, BandMember.BandMemberStatus>();
+    private Dictionary<BandMember, BandMember.BandMemberStatus> _bandMembersLastKnownStatusForStun = new Dictionary<BandMember, BandMember.BandMemberStatus>();
+    private bool _isInStunParry = false;
+    private BandMember _stunnedMember = null;
+
+    private bool _isGameOverMan = false;
+
     static private BandManager _instance = null;
     static public BandManager Get() { return _instance; }
 
@@ -39,16 +46,38 @@ public class BandManager : MonoBehaviour
         _instance = this;
 
         _fullBandAliveGraceTimer = _fullBandAliveGracePeriod;
+
+        BandMember.OnMemberStunned += OnBandMemberStunned;
+    }
+
+    private void OnDestroy()
+    {
+        BandMember.OnMemberStunned -= OnBandMemberStunned;
     }
 
     private void Update()
     {
+        if(_isGameOverMan)
+        {
+            return;
+        }
+
         CheckFullBandAliveRestartCounter();
 
 #if UNITY_EDITOR
         if (Input.GetKeyDown(KeyCode.O))
         {
             AttackRandomAttackingFan();
+        }
+        if (Input.GetKeyDown(KeyCode.U))
+        {
+            AudioManager.Get().UnMute(AudioManager.Music.FullBand);
+            AudioManager.Get().Pitch(AudioManager.Music.FullBand, -5f);
+        }
+        if (Input.GetKeyDown(KeyCode.U))
+        {
+            AudioManager.Get().Mute(AudioManager.Music.FullBand);
+            AudioManager.Get().Pitch(AudioManager.Music.FullBand, 0f);
         }
 #endif
     }
@@ -100,35 +129,56 @@ public class BandManager : MonoBehaviour
 
     public void SequenceCompleted(SequenceNote.HitScore hitScore)
     {
+        if(_isGameOverMan)
+        {
+            return;
+        }
+
         //@TODO: React appropriately to the level of sequence completed.
-        switch(hitScore)
+            switch (hitScore)
         {
             case SequenceNote.HitScore.EXCELLENT:
                 {
+                    if(_isInStunParry)
+                    {
+                        StunParry();
+                    }
+
                     //@TODO: Try to handle Excellent, then have it fall through... Might need to recurse down the line?
                     var bandMember = AttackRandomAttackingFan();
-                    if (bandMember != null)
+                    if (!_isInStunParry)
                     {
-                        //@TODO: Boost this to next tier or something?
-                        bandMember.SetPlaying();
-                    }
-                    else
-                    {
-                        //@TODO: Boost this to next tier or something?
-                        StartRandomMemberPlaying();
+                        if (bandMember != null)
+                        {
+                            //@TODO: Boost this to next tier or something?
+                            bandMember.SetPlaying();
+                        }
+                        else
+                        {
+                            //@TODO: Boost this to next tier or something?
+                            StartRandomMemberPlaying();
+                        }
                     }
                 }
                 break;
             case SequenceNote.HitScore.GOOD:
                 {
+                    //if (_isInStunParry)
+                    //{
+                    //    StunParry();
+                    //}
+
                     var bandMember = AttackRandomAttackingFan();
-                    if(bandMember != null)
+                    if (!_isInStunParry)
                     {
-                        bandMember.SetPlaying();
-                    }
-                    else
-                    {
-                        StartRandomMemberPlaying();
+                        if (bandMember != null)
+                        {
+                            bandMember.SetPlaying();
+                        }
+                        else
+                        {
+                            StartRandomMemberPlaying();
+                        }
                     }
                 }
                 break;
@@ -146,6 +196,11 @@ public class BandManager : MonoBehaviour
             case SequenceNote.HitScore.NOT_HIT:
                 Debug.LogWarning("This shouldn't happen - shouldn't get NOT HIT at this point.");
                 break;
+        }
+
+        if (_isInStunParry)
+        {
+            EndStunParryAttempt();
         }
 
         Console.Get().BounceHitScoreLight(hitScore);
@@ -223,7 +278,7 @@ public class BandManager : MonoBehaviour
                 _fullBandAliveGraceTimer -= Time.deltaTime;
                 if (_fullBandAliveGraceTimer <= 0f)
                 {
-                    SceneManager.LoadScene("GameOverLoop");
+                    GameOverMan();
                 }
             }
         }
@@ -232,5 +287,133 @@ public class BandManager : MonoBehaviour
             _hasHadFullBandPlay = true;
             _fullBandAliveGraceTimer = _fullBandAliveGracePeriod;
         }
+    }
+
+    private void OnBandMemberStunned(BandMember stunnedMember)
+    {
+        if(!_isInStunParry)
+        {
+            _isInStunParry = true;
+
+            OnBandMemberStunned_WholeBand(stunnedMember);
+            //OnBandMemberStunned_SingleMember(stunnedMember);
+        }
+    }
+
+    private void StunParry()
+    {
+        StunParry_WholeBand();
+        //StunParry_SingleMember();
+
+        EndStunParryAttempt();
+    }
+
+    private void EndStunParryAttempt()
+    {
+        if (_isInStunParry)
+        {
+            EndStunParryAttempt_WholeBand();
+            //EndStunParryAttempt_SingleMember();
+
+            _isInStunParry = false;
+        }
+    }
+
+    #region OnBandMemberStunned_WholeBand
+    private void OnBandMemberStunned_WholeBand(BandMember stunnedMember)
+    {
+        foreach (var member in _bandMembers)
+        {
+            if (_bandMembersLastKnownStatusForParry.ContainsKey(member))
+            {
+                _bandMembersLastKnownStatusForParry[member] = member.GetStatus();
+                _bandMembersLastKnownStatusForStun[member] = member.GetStatus();
+            }
+            else
+            {
+                _bandMembersLastKnownStatusForParry.Add(member, member.GetStatus());
+                _bandMembersLastKnownStatusForStun[member] = member.GetStatus();
+            }
+            member.SetStatus(BandMember.BandMemberStatus.NOT_PLAYING);
+        }
+
+        _bandMembersLastKnownStatusForParry[stunnedMember] = BandMember.BandMemberStatus.PLAYING;
+
+        // Set Reverse track
+        AudioManager.Get().UnMute(AudioManager.Music.FullBand);
+        AudioManager.Get().Pitch(AudioManager.Music.FullBand, -1f);
+    }
+    private void StunParry_WholeBand()
+    {
+        // Restore everyone's former state.
+        foreach (var member in _bandMembers)
+        {
+            member.SetStatus(_bandMembersLastKnownStatusForParry[member]);
+        }
+    }
+
+    private void EndStunParryAttempt_WholeBand()
+    {
+        // Set Reverse track
+        AudioManager.Get().Mute(AudioManager.Music.FullBand);
+        AudioManager.Get().Pitch(AudioManager.Music.FullBand, 0f);
+
+        // Restore everyone's former state.
+        foreach (var member in _bandMembers)
+        {
+            member.SetStatus(_bandMembersLastKnownStatusForStun[member]);
+        }
+    }
+    #endregion
+
+    private void OnBandMemberStunned_SingleMember(BandMember stunnedMember)
+    {
+        _stunnedMember = stunnedMember;
+        _stunnedMember.SlowDeath();
+    }
+
+    private void StunParry_SingleMember()
+    {
+        _stunnedMember.KillSlowDeathCoroutine();
+        _stunnedMember.SetStatus(BandMember.BandMemberStatus.PLAYING);
+    }
+
+    private void EndStunParryAttempt_SingleMember()
+    {
+        _stunnedMember.KillSlowDeathCoroutine();
+        _stunnedMember = null;
+    }
+
+    private void GameOverMan()
+    {
+        _isGameOverMan = true;
+
+        StartCoroutine(GameOverManRoutine());
+    }
+
+    private IEnumerator GameOverManRoutine()
+    {
+        foreach (var member in _bandMembers)
+        {
+            member.SetStatus(BandMember.BandMemberStatus.NOT_PLAYING);
+        }
+
+        float gameOverTime = 5f;
+        float gameOverTimer = 0f;
+
+        AudioManager.Get().UnMute(AudioManager.Music.FullBand);
+
+        while (true)
+        {
+            gameOverTimer += Time.deltaTime;
+            if (gameOverTimer >= gameOverTime)
+            {
+                break;
+            }
+            AudioManager.Get().Pitch(AudioManager.Music.FullBand, -5f * gameOverTimer / gameOverTime);
+            yield return null;
+        }
+
+        SceneManager.LoadScene("GameOverLoop");
     }
 }

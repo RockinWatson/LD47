@@ -75,7 +75,7 @@ namespace Assets.Scripts
         {
             foreach (Music music in Enum.GetValues(typeof(Music)))
             {
-                if (music == Music.FullBand){ continue; }
+                //if (music == Music.FullBand){ continue; }
                 Play(music);
             }
         }
@@ -124,6 +124,11 @@ namespace Assets.Scripts
         {
             yield return new WaitForSeconds(1f);
             sound.Source.loop = false;
+        }
+
+        public void Pitch(Music soundName, float pitch)
+        {
+            GetSound(soundName).Source.pitch = pitch;
         }
     }
 }
