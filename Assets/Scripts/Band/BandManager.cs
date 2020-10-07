@@ -146,7 +146,7 @@ public class BandManager : MonoBehaviour
 
                     //@TODO: Try to handle Excellent, then have it fall through... Might need to recurse down the line?
                     var bandMember = AttackRandomAttackingFan();
-                    if (!_isInStunParry)
+                    //if (!_isInStunParry)
                     {
                         if (bandMember != null)
                         {
