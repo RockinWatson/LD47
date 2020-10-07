@@ -221,13 +221,13 @@ MonoBehaviour:
   - {x: 13.25, y: -1.77507, z: 0}
   - {x: 13.25, y: -2.85, z: 0}
   TARGET: {fileID: 57688323310461793}
-  ACTIVE_TARGET_RANGE: 0.35
+  ACTIVE_TARGET_RANGE: 0.6
   ARROW_SPEED: 2
   TARGET_RANGES:
   - 0.05
-  - 0.1
-  - 0.2
-  - 0.35
+  - 0.15
+  - 0.3
+  - 0.6
 --- !u!1 &57688322523400159
 GameObject:
   m_ObjectHideFlags: 0
