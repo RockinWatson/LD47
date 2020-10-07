@@ -29,7 +29,7 @@ public class SequenceNote : MonoBehaviour
     private void Update()
     {
         //@TODO: Check input to see if key is hit
-        if(IsActivateable())
+        if(IsActivateable() && !_wasHit)
         {
             _wasActivateable = true;
             CheckInput();

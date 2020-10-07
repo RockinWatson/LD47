@@ -147,6 +147,8 @@ public class BandManager : MonoBehaviour
                 Debug.LogWarning("This shouldn't happen - shouldn't get NOT HIT at this point.");
                 break;
         }
+
+        Console.Get().BounceHitScoreLight(hitScore);
     }
 
     private void StartRandomMemberPlaying()
