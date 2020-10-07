@@ -31,10 +31,10 @@ namespace Assets.Scripts
             _canTurnOnTrackDict[track] = canTurnOn;
         }
 
-        private void Update()
-        {
-            ReadInputs();
-        }
+        //private void Update()
+        //{
+        //    ReadInputs();
+        //}
 
         private void ReadInputs()
         {

@@ -50,25 +50,25 @@ public class SequenceNote : MonoBehaviour
         switch(_arrow)
         {
             case Sequence.Arrow.UP:
-                if(Input.GetKeyDown(KeyCode.UpArrow))
+                if(Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.W))
                 {
                     ProcessHit();
                 }
                 break;
             case Sequence.Arrow.LEFT:
-                if (Input.GetKeyDown(KeyCode.LeftArrow))
+                if (Input.GetKeyDown(KeyCode.LeftArrow) || Input.GetKeyDown(KeyCode.A))
                 {
                     ProcessHit();
                 }
                 break;
             case Sequence.Arrow.RIGHT:
-                if (Input.GetKeyDown(KeyCode.RightArrow))
+                if (Input.GetKeyDown(KeyCode.RightArrow) || Input.GetKeyDown(KeyCode.D))
                 {
                     ProcessHit();
                 }
                 break;
             case Sequence.Arrow.DOWN:
-                if (Input.GetKeyDown(KeyCode.DownArrow))
+                if (Input.GetKeyDown(KeyCode.DownArrow) || Input.GetKeyDown(KeyCode.S))
                 {
                     ProcessHit();
                 }
