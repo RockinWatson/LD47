@@ -111,6 +111,11 @@ namespace Assets.Scripts
             return GetSound(soundName).Source.volume;
         }
 
+        public float SetVolume(Music soundName, float volume)
+        {
+            return GetSound(soundName).Source.volume = volume;
+        }
+
         public void PlayFullBandReverse()
         {
             var fullBand = GetSound(Music.FullBand);

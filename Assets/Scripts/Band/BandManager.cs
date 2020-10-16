@@ -7,6 +7,8 @@ using Assets.Scripts;
 
 public class BandManager : MonoBehaviour
 {
+    public const bool PITCH_SHIFT_ENABLED = false;
+
     [SerializeField] private BandMember[] _bandMembers = new BandMember[4];
     [SerializeField] private BandMemberType[] _memberPriority = new BandMemberType[4]; //@TODO: Priority of members - drums, bass, chords, melody
 
@@ -69,7 +71,7 @@ public class BandManager : MonoBehaviour
         {
             AttackRandomAttackingFan();
         }
-        if (Input.GetKeyDown(KeyCode.U))
+        if (Input.GetKeyDown(KeyCode.I))
         {
             AudioManager.Get().UnMute(AudioManager.Music.FullBand);
             AudioManager.Get().Pitch(AudioManager.Music.FullBand, -5f);
@@ -78,6 +80,10 @@ public class BandManager : MonoBehaviour
         {
             AudioManager.Get().Mute(AudioManager.Music.FullBand);
             AudioManager.Get().Pitch(AudioManager.Music.FullBand, 0f);
+        }
+        if (Input.GetKeyDown(KeyCode.Y))
+        {
+            GameOverMan();
         }
 #endif
     }
@@ -295,15 +301,21 @@ public class BandManager : MonoBehaviour
         {
             _isInStunParry = true;
 
-            OnBandMemberStunned_WholeBand(stunnedMember);
-            //OnBandMemberStunned_SingleMember(stunnedMember);
+            if (PITCH_SHIFT_ENABLED)
+            {
+                //OnBandMemberStunned_WholeBand(stunnedMember);
+            }
+            else
+            {
+                OnBandMemberStunned_SingleMember(stunnedMember);
+            }
         }
     }
 
     private void StunParry()
     {
-        StunParry_WholeBand();
-        //StunParry_SingleMember();
+        //StunParry_WholeBand();
+        StunParry_SingleMember();
 
         EndStunParryAttempt();
     }
@@ -312,8 +324,8 @@ public class BandManager : MonoBehaviour
     {
         if (_isInStunParry)
         {
-            EndStunParryAttempt_WholeBand();
-            //EndStunParryAttempt_SingleMember();
+            //EndStunParryAttempt_WholeBand();
+            EndStunParryAttempt_SingleMember();
 
             _isInStunParry = false;
         }
@@ -369,18 +381,32 @@ public class BandManager : MonoBehaviour
     private void OnBandMemberStunned_SingleMember(BandMember stunnedMember)
     {
         _stunnedMember = stunnedMember;
-        _stunnedMember.SlowDeath();
+        if(PITCH_SHIFT_ENABLED)
+        {
+            //@TODO: This doesn't work as-is beause it gets things off track from one another.
+            _stunnedMember.SlowDeath();
+        }
+        else
+        {
+            _stunnedMember.InstaDeath();
+        }
     }
 
     private void StunParry_SingleMember()
     {
-        _stunnedMember.KillSlowDeathCoroutine();
+        if (PITCH_SHIFT_ENABLED)
+        {
+            _stunnedMember.KillSlowDeathCoroutine();
+        }
         _stunnedMember.SetStatus(BandMember.BandMemberStatus.PLAYING);
     }
 
     private void EndStunParryAttempt_SingleMember()
     {
-        _stunnedMember.KillSlowDeathCoroutine();
+        if (PITCH_SHIFT_ENABLED)
+        {
+            _stunnedMember.KillSlowDeathCoroutine();
+        }
         _stunnedMember = null;
     }
 
@@ -410,7 +436,14 @@ public class BandManager : MonoBehaviour
             {
                 break;
             }
-            AudioManager.Get().Pitch(AudioManager.Music.FullBand, -5f * gameOverTimer / gameOverTime);
+            if (PITCH_SHIFT_ENABLED)
+            {
+                AudioManager.Get().Pitch(AudioManager.Music.FullBand, -5f * gameOverTimer / gameOverTime);
+            }
+            else
+            {
+                AudioManager.Get().SetVolume(AudioManager.Music.FullBand, (gameOverTime - gameOverTimer) / gameOverTime);
+            }
             yield return null;
         }
 

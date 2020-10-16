@@ -115,6 +115,11 @@ public class BandMember : MonoBehaviour
         Pitch(0.25f);
     }
 
+    public void InstaDeath()
+    {
+        Mute();
+    }
+
     public void SlowDeath()
     {
         //_slowDeathCoroutine = SlowDeathRoutine();
