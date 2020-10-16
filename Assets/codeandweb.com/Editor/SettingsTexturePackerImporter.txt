@@ -14,6 +14,7 @@ tpsheetFileNames:
 - Assets/Art/Animations/GatorON.tpsheet
 - Assets/Art/Animations/GoatOFF.tpsheet
 - Assets/Art/Animations/GoatON.tpsheet
+- Assets/Art/Animations/ImrpovedStory.tpsheet
 - Assets/Art/Animations/NewSpeakers.tpsheet
 - Assets/Art/Animations/planet.tpsheet
 - Assets/Art/Animations/PlanetFog.tpsheet
@@ -40,6 +41,7 @@ textureFileNames:
 - Assets/Art/Animations/GatorON.png
 - Assets/Art/Animations/GoatOFF.png
 - Assets/Art/Animations/GoatON.png
+- Assets/Art/Animations/ImrpovedStory.png
 - Assets/Art/Animations/NewSpeakers.png
 - Assets/Art/Animations/planet.png
 - Assets/Art/Animations/PlanetFog.png
@@ -66,6 +68,7 @@ normalmapFileNames:
 - Assets/Art/Animations/GatorON_n.png
 - Assets/Art/Animations/GoatOFF_n.png
 - Assets/Art/Animations/GoatON_n.png
+- 
 - Assets/Art/Animations/NewSpeakers_n.png
 - 
 - 
